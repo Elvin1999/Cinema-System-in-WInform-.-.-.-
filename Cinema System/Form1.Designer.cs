@@ -55,9 +55,9 @@
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton1.ForeColor = System.Drawing.Color.Green;
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(570, 267);
+            this.metroButton1.Location = new System.Drawing.Point(542, 492);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(56, 34);
+            this.metroButton1.Size = new System.Drawing.Size(124, 46);
             this.metroButton1.TabIndex = 0;
             this.metroButton1.Text = "Save";
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -72,9 +72,9 @@
             this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton2.ForeColor = System.Drawing.Color.Green;
             this.metroButton2.Highlight = true;
-            this.metroButton2.Location = new System.Drawing.Point(694, 267);
+            this.metroButton2.Location = new System.Drawing.Point(666, 492);
             this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(56, 34);
+            this.metroButton2.Size = new System.Drawing.Size(124, 46);
             this.metroButton2.TabIndex = 0;
             this.metroButton2.Text = "Open";
             this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Light;
