@@ -85,7 +85,7 @@
             // 
             // metroLbTitle
             // 
-            this.metroLbTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLbTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLbTitle.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbTitle.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLbTitle.ForeColor = System.Drawing.Color.Green;
@@ -118,11 +118,11 @@
             // 
             // metroLbGenre
             // 
-            this.metroLbGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLbGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLbGenre.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbGenre.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLbGenre.ForeColor = System.Drawing.Color.Green;
-            this.metroLbGenre.Location = new System.Drawing.Point(537, 100);
+            this.metroLbGenre.Location = new System.Drawing.Point(537, 131);
             this.metroLbGenre.Name = "metroLbGenre";
             this.metroLbGenre.Size = new System.Drawing.Size(124, 26);
             this.metroLbGenre.TabIndex = 5;
@@ -133,11 +133,11 @@
             // 
             // metroLbYear
             // 
-            this.metroLbYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLbYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLbYear.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbYear.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLbYear.ForeColor = System.Drawing.Color.Green;
-            this.metroLbYear.Location = new System.Drawing.Point(537, 141);
+            this.metroLbYear.Location = new System.Drawing.Point(536, 213);
             this.metroLbYear.Name = "metroLbYear";
             this.metroLbYear.Size = new System.Drawing.Size(124, 26);
             this.metroLbYear.TabIndex = 5;
@@ -148,11 +148,11 @@
             // 
             // metroLbTime
             // 
-            this.metroLbTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLbTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLbTime.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbTime.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLbTime.ForeColor = System.Drawing.Color.Green;
-            this.metroLbTime.Location = new System.Drawing.Point(537, 182);
+            this.metroLbTime.Location = new System.Drawing.Point(536, 254);
             this.metroLbTime.Name = "metroLbTime";
             this.metroLbTime.Size = new System.Drawing.Size(124, 26);
             this.metroLbTime.TabIndex = 5;
@@ -163,11 +163,11 @@
             // 
             // metroLbLanguage
             // 
-            this.metroLbLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLbLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLbLanguage.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLbLanguage.ForeColor = System.Drawing.Color.Green;
-            this.metroLbLanguage.Location = new System.Drawing.Point(537, 223);
+            this.metroLbLanguage.Location = new System.Drawing.Point(536, 295);
             this.metroLbLanguage.Name = "metroLbLanguage";
             this.metroLbLanguage.Size = new System.Drawing.Size(124, 26);
             this.metroLbLanguage.TabIndex = 5;
@@ -178,7 +178,7 @@
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
             this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxSearch.ForeColor = System.Drawing.Color.Green;
             this.textBoxSearch.Location = new System.Drawing.Point(28, 4);
@@ -194,75 +194,70 @@
             // 
             // metroLabelTitle
             // 
-            this.metroLabelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLabelTitle.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelTitle.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabelTitle.ForeColor = System.Drawing.Color.Green;
             this.metroLabelTitle.Location = new System.Drawing.Point(666, 59);
             this.metroLabelTitle.Name = "metroLabelTitle";
-            this.metroLabelTitle.Size = new System.Drawing.Size(124, 26);
+            this.metroLabelTitle.Size = new System.Drawing.Size(236, 60);
             this.metroLabelTitle.TabIndex = 5;
-            this.metroLabelTitle.Text = "Title";
             this.metroLabelTitle.UseCustomBackColor = true;
             this.metroLabelTitle.UseCustomForeColor = true;
             this.metroLabelTitle.UseStyleColors = true;
             // 
             // metroLabelGenre
             // 
-            this.metroLabelGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabelGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLabelGenre.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelGenre.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabelGenre.ForeColor = System.Drawing.Color.Green;
-            this.metroLabelGenre.Location = new System.Drawing.Point(666, 100);
+            this.metroLabelGenre.Location = new System.Drawing.Point(666, 131);
             this.metroLabelGenre.Name = "metroLabelGenre";
-            this.metroLabelGenre.Size = new System.Drawing.Size(124, 26);
+            this.metroLabelGenre.Size = new System.Drawing.Size(236, 69);
             this.metroLabelGenre.TabIndex = 5;
-            this.metroLabelGenre.Text = "Genre";
             this.metroLabelGenre.UseCustomBackColor = true;
             this.metroLabelGenre.UseCustomForeColor = true;
             this.metroLabelGenre.UseStyleColors = true;
             // 
             // metroLabelYear
             // 
-            this.metroLabelYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabelYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLabelYear.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelYear.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabelYear.ForeColor = System.Drawing.Color.Green;
-            this.metroLabelYear.Location = new System.Drawing.Point(666, 141);
+            this.metroLabelYear.Location = new System.Drawing.Point(666, 213);
             this.metroLabelYear.Name = "metroLabelYear";
             this.metroLabelYear.Size = new System.Drawing.Size(124, 26);
             this.metroLabelYear.TabIndex = 5;
-            this.metroLabelYear.Text = "Year";
             this.metroLabelYear.UseCustomBackColor = true;
             this.metroLabelYear.UseCustomForeColor = true;
             this.metroLabelYear.UseStyleColors = true;
             // 
             // metroLabelTime
             // 
-            this.metroLabelTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabelTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLabelTime.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelTime.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabelTime.ForeColor = System.Drawing.Color.Green;
-            this.metroLabelTime.Location = new System.Drawing.Point(666, 182);
+            this.metroLabelTime.Location = new System.Drawing.Point(666, 254);
             this.metroLabelTime.Name = "metroLabelTime";
             this.metroLabelTime.Size = new System.Drawing.Size(124, 26);
             this.metroLabelTime.TabIndex = 5;
-            this.metroLabelTime.Text = "RunTime";
             this.metroLabelTime.UseCustomBackColor = true;
             this.metroLabelTime.UseCustomForeColor = true;
             this.metroLabelTime.UseStyleColors = true;
             // 
             // metroLabelLanguage
             // 
-            this.metroLabelLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabelLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
             this.metroLabelLanguage.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabelLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabelLanguage.ForeColor = System.Drawing.Color.Green;
-            this.metroLabelLanguage.Location = new System.Drawing.Point(666, 223);
+            this.metroLabelLanguage.Location = new System.Drawing.Point(666, 295);
             this.metroLabelLanguage.Name = "metroLabelLanguage";
             this.metroLabelLanguage.Size = new System.Drawing.Size(124, 26);
             this.metroLabelLanguage.TabIndex = 5;
-            this.metroLabelLanguage.Text = "Language";
             this.metroLabelLanguage.UseCustomBackColor = true;
             this.metroLabelLanguage.UseCustomForeColor = true;
             this.metroLabelLanguage.UseStyleColors = true;
@@ -317,7 +312,7 @@
             this.metroButton3.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton3.ForeColor = System.Drawing.Color.Green;
             this.metroButton3.Highlight = true;
-            this.metroButton3.Location = new System.Drawing.Point(745, 0);
+            this.metroButton3.Location = new System.Drawing.Point(977, 0);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(56, 34);
             this.metroButton3.TabIndex = 0;
@@ -334,7 +329,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
-            this.ClientSize = new System.Drawing.Size(802, 628);
+            this.ClientSize = new System.Drawing.Size(1033, 628);
             this.Controls.Add(this.metroLabelLanguage);
             this.Controls.Add(this.metroLbLanguage);
             this.Controls.Add(this.metroLabelTime);
