@@ -23,7 +23,7 @@ namespace Cinema_System
             //pictureBoxRight.Image = Properties.Resources.right22;
             //pictureBoxRight.SizeMode = PictureBoxSizeMode.StretchImage;
 
-           
+
 
         }
 
@@ -65,6 +65,7 @@ namespace Cinema_System
             }
         }
         List<string> datalist = new List<string>();
+        public bool IsNormal { get; set; }
         private void metroBtnSearch_Click(object sender, EventArgs e)
         {
 
@@ -72,16 +73,31 @@ namespace Cinema_System
             HttpResponseMessage response = new HttpResponseMessage();
             response =
                                   http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&t={textBoxSearch.Text}&plot=full").Result;
-            var str = response.Content.ReadAsStringAsync().Result;
-            dynamic data = JsonConvert.DeserializeObject(str);
-            datalist.Add(str);
-            pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxMovie.Load($@"{data.Poster}");
-            metroLabelTitle.Text = data.Title;
-            metroLabelGenre.Text = data.Genre;
-            metroLabelYear.Text = data.Year;
-            metroLabelTime.Text = data.Runtime;
-            metroLabelLanguage.Text = data.Language;
+            try
+            {
+                var str = response.Content.ReadAsStringAsync().Result;
+                dynamic data = JsonConvert.DeserializeObject(str);
+                datalist.Add(str);
+                pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+                pictureBoxMovie.Load($@"{data.Poster}");
+                metroLabelTitle.Text = data.Title;
+                metroLabelGenre.Text = data.Genre;
+                metroLabelYear.Text = data.Year;
+                metroLabelTime.Text = data.Runtime;
+                metroLabelLanguage.Text = data.Language;
+            }
+            catch (Exception ex)
+            {
+                IsNormal = true;
+                MessageBox.Show("Did not find this movie");
+            }
+            if (IsNormal)
+            {
+                IsNormal = false;
+                pictureBoxMovie.Image = Properties.Resources.NotFoundImage;
+                pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+            }
+
         }
         int max;
         int count = 0;
