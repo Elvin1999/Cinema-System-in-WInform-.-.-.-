@@ -18,6 +18,10 @@ namespace Cinema_System
             InitializeComponent();
             pictureBoxMovie.Image = Properties.Resources.NotFoundImage;
             pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxLeft.Image = Properties.Resources.left;
+            pictureBoxLeft.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxRight.Image = Properties.Resources.right;
+            pictureBoxRight.SizeMode = PictureBoxSizeMode.StretchImage;
 
         }
 
@@ -41,11 +45,7 @@ namespace Cinema_System
             }
         }
 
-        private void textBoxSearch_KeyUp(object sender, KeyEventArgs e)
-        {
-            //maybe here i do that
 
-        }
 
         private void textBoxSearch_Enter(object sender, EventArgs e)
         {
@@ -62,17 +62,39 @@ namespace Cinema_System
                 textBoxSearch.Text = "Search movie . . .";
             }
         }
-
+        List<string> datalist = new List<string>();
         private void metroBtnSearch_Click(object sender, EventArgs e)
         {
+
             HttpClient http = new HttpClient();
-            var response =
-           http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&t={textBoxSearch.Text}").Result;
+            HttpResponseMessage response = new HttpResponseMessage();
+            response =
+                                  http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&t={textBoxSearch.Text}&plot=full").Result;
             var str = response.Content.ReadAsStringAsync().Result;
             dynamic data = JsonConvert.DeserializeObject(str);
+            datalist.Add(str);
             pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxMovie.Load($@"{data.Poster}");
+            textBoxTitle.Text = data.Title;
+            textBoxGenre.Text = data.Genre;
+            textBoxYear.Text = data.Year;
+            textBoxRuntime.Text = data.Runtime;
+            textBxLanguage.Text = data.Language;
+        }
+        int max;
+        int count = 0;
+        private void pictureBoxRight_Click(object sender, EventArgs e)
+        {
+            pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+            dynamic data = JsonConvert.DeserializeObject(datalist[count]);
+            pictureBoxMovie.Load($@"{data.Poster}");
+        }
 
+        private void pictureBoxLeft_Click(object sender, EventArgs e)
+        {
+            pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+            dynamic data = JsonConvert.DeserializeObject(datalist[count]);
+            pictureBoxMovie.Load($@"{data.Poster}");
         }
     }
 }
