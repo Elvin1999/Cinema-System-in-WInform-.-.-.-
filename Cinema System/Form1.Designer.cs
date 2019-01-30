@@ -225,6 +225,11 @@
             this.textBoxSearch.Size = new System.Drawing.Size(303, 26);
             this.textBoxSearch.TabIndex = 4;
             this.textBoxSearch.Text = "Search movie . . .";
+            this.textBoxSearch.Enter += new System.EventHandler(this.textBoxSearch_Enter);
+            this.textBoxSearch.KeyUp += new System.Windows.Forms.KeyEventHandler(this.textBoxSearch_KeyUp);
+            this.textBoxSearch.Leave += new System.EventHandler(this.textBoxSearch_Leave);
+            this.textBoxSearch.MouseEnter += new System.EventHandler(this.textBoxSearch_MouseEnter);
+            this.textBoxSearch.MouseLeave += new System.EventHandler(this.textBoxSearch_MouseLeave);
             // 
             // Form1
             // 

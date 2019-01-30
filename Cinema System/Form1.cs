@@ -22,6 +22,42 @@ namespace Cinema_System
         private void Form1_Load(object sender, EventArgs e)
         {
 
+        }       
+        private void textBoxSearch_MouseEnter(object sender, EventArgs e)
+        {
+            if (textBoxSearch.Text == "Search movie . . .")
+            {
+                textBoxSearch.Text = String.Empty;
+            }
+        }
+
+        private void textBoxSearch_MouseLeave(object sender, EventArgs e)
+        {
+            if (textBoxSearch.Text == String.Empty)
+            {
+                textBoxSearch.Text = "Search movie . . .";
+            }
+        }
+
+        private void textBoxSearch_KeyUp(object sender, KeyEventArgs e)
+        {
+            //maybe here i do that
+        }
+
+        private void textBoxSearch_Enter(object sender, EventArgs e)
+        {
+            if (textBoxSearch.Text == "Search movie . . .")
+            {
+                textBoxSearch.Text = String.Empty;
+            }
+        }
+
+        private void textBoxSearch_Leave(object sender, EventArgs e)
+        {
+            if (textBoxSearch.Text == String.Empty)
+            {
+                textBoxSearch.Text = "Search movie . . .";
+            }
         }
     }
 }
