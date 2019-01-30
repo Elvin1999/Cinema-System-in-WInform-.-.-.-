@@ -65,13 +65,14 @@ namespace Cinema_System
 
         private void metroBtnSearch_Click(object sender, EventArgs e)
         {
-//            HttpClient http = new HttpClient();
-//            var response =
-//           http.GetAsync(@"http://www.omdbapi.com/?i=tt3896198&apikey=ddee1dae
-//").Result;
-//            var str = response.Content.ReadAsStringAsync().Result;
-//            dynamic data = JsonConvert.DeserializeObject(str);
-//            textBoxTest.Text = data.Poster;
+           // HttpClient http = new HttpClient();
+           // var response =
+           //http.GetAsync($@"http://www.omdbapi.com/?i=tt3896198&apikey=interstealler").Result;
+           // var str = response.Content.ReadAsStringAsync().Result;
+           // dynamic data = JsonConvert.DeserializeObject(str);
+           // MessageBox.Show(data.Poster);
+            //string url = data.Poster;
+            //pictureBoxMovie.Load(url);
         }
     }
 }
