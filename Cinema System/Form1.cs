@@ -44,7 +44,7 @@ namespace Cinema_System
         private void textBoxSearch_KeyUp(object sender, KeyEventArgs e)
         {
             //maybe here i do that
-           
+
         }
 
         private void textBoxSearch_Enter(object sender, EventArgs e)
@@ -65,14 +65,14 @@ namespace Cinema_System
 
         private void metroBtnSearch_Click(object sender, EventArgs e)
         {
-           // HttpClient http = new HttpClient();
-           // var response =
-           //http.GetAsync($@"http://www.omdbapi.com/?i=tt3896198&apikey=interstealler").Result;
-           // var str = response.Content.ReadAsStringAsync().Result;
-           // dynamic data = JsonConvert.DeserializeObject(str);
-           // MessageBox.Show(data.Poster);
-            //string url = data.Poster;
-            //pictureBoxMovie.Load(url);
+            HttpClient http = new HttpClient();
+            var response =
+           http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&t={textBoxSearch.Text}").Result;
+            var str = response.Content.ReadAsStringAsync().Result;
+            dynamic data = JsonConvert.DeserializeObject(str);
+            pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBoxMovie.Load($@"{data.Poster}");
+
         }
     }
 }
