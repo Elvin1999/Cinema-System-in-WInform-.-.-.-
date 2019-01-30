@@ -81,6 +81,7 @@ namespace Cinema_System
                 metroLabelYear.Text = Data.Search[count].Year;
                 metroLabelTime.Text = Data.Search[count].Runtime;
                 metroLabelLanguage.Text = Data.Search[count].Language;
+                ///
                 VideoSearch videos = new VideoSearch();
                 var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
                 var embed = "<html>" +
@@ -119,51 +120,11 @@ namespace Cinema_System
                 metroLabelTime.Text = data.Runtime;
                 metroLabelLanguage.Text = data.Language;
             }
-        }
-        private void pictureBoxRight_Click(object sender, EventArgs e)
-        {
-            ++count;
-            var response =
-                                   http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&t={Data.Search[count].Title}&plot=full").Result;
-            var str = response.Content.ReadAsStringAsync().Result;
-            dynamic data = JsonConvert.DeserializeObject(str);
-            pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxMovie.Load($@"{data.Poster}");
-            metroLabelTitle.Text = data.Title;
-            metroLabelGenre.Text = data.Genre;
-            metroLabelYear.Text = data.Year;
-            metroLabelTime.Text = data.Runtime;
-            metroLabelLanguage.Text = data.Language;
-        }
-
-        private void pictureBoxLeft_Click(object sender, EventArgs e)
-        {
-            --count;
-            var response =
-                                   http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&t={Data.Search[count].Title}&plot=full").Result;
-            var str = response.Content.ReadAsStringAsync().Result;
-            dynamic data = JsonConvert.DeserializeObject(str);
-            pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-            if (data.poster != "n/a")
-            {
-                pictureBoxMovie.Load($@"{data.Poster}");
-            }
-            else
-            {
-                pictureBoxMovie.Image = Properties.Resources.NotFoundImage;
-            }
-            metroLabelTitle.Text = data.Title;
-            metroLabelGenre.Text = data.Genre;
-            metroLabelYear.Text = data.Year;
-            metroLabelTime.Text = data.Runtime;
-            metroLabelLanguage.Text = data.Language;
-        }
-
+        }       
         private void metroButton3_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
         private void metroBtLeft_Click(object sender, EventArgs e)
         {
             --count;
@@ -174,7 +135,7 @@ namespace Cinema_System
                 var str = response.Content.ReadAsStringAsync().Result;
                 dynamic data = JsonConvert.DeserializeObject(str);
                 pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-                if (data.poster != "n/a")
+                if (data.poster != "N/A")
                 {
                     pictureBoxMovie.Load($@"{data.Poster}");
                 }
@@ -187,8 +148,19 @@ namespace Cinema_System
                 metroLabelYear.Text = data.Year;
                 metroLabelTime.Text = data.Runtime;
                 metroLabelLanguage.Text = data.Language;
+                VideoSearch videos = new VideoSearch();
+                var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
+                var embed = "<html>" +
+                        "<head>" +
+            "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+            "</head>" +
+            "<body>" +
+            "<iframe width=330px height=160px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+            "</body>" +
+            "</html>";
+                var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+                webBrowser1.DocumentText = string.Format(embed, url);
             }
-
         }
         public string Url { get; set; }
         private void metroBtRight_Click(object sender, EventArgs e)
@@ -203,7 +175,7 @@ namespace Cinema_System
                     var str = response.Content.ReadAsStringAsync().Result;
                     dynamic data = JsonConvert.DeserializeObject(str);
                     pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-                    if (data.Poster != "n/a")
+                    if (data.Poster != "N/A")
                     {
                         pictureBoxMovie.Load($@"{data.Poster}");
                     }
@@ -216,6 +188,18 @@ namespace Cinema_System
                     metroLabelYear.Text = data.Year;
                     metroLabelTime.Text = data.Runtime;
                     metroLabelLanguage.Text = data.Language;
+                    VideoSearch videos = new VideoSearch();
+                    var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
+                    var embed = "<html>" +
+                            "<head>" +
+                "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+                "</head>" +
+                "<body>" +
+                "<iframe width=330px height=160px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+                "</body>" +
+                "</html>";
+                    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+                    webBrowser1.DocumentText = string.Format(embed, url);
                 }
                 catch (Exception)
                 {
