@@ -64,7 +64,7 @@ namespace Cinema_System
         }
 
         private void metroBtnSearch_Click(object sender, EventArgs e)
-//        {
+        {
 //            HttpClient http = new HttpClient();
 //            var response =
 //           http.GetAsync(@"http://www.omdbapi.com/?i=tt3896198&apikey=ddee1dae
