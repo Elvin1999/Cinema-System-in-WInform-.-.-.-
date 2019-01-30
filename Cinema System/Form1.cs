@@ -16,7 +16,7 @@ namespace Cinema_System
         public Form1()
         {
             InitializeComponent();
-            pictureBoxMovie.Image = Properties.Resources.NotFoundImage;
+            pictureBoxMovie.Image = Properties.Resources.Cinemaimage;
             pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxLeft.Image = Properties.Resources.left;
             pictureBoxLeft.SizeMode = PictureBoxSizeMode.StretchImage;

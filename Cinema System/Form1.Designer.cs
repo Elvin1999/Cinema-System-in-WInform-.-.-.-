@@ -30,21 +30,21 @@
         {
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
-            this.textBoxTitle = new System.Windows.Forms.TextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroBtnSearch = new MetroFramework.Controls.MetroButton();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.metroLbLanguage = new MetroFramework.Controls.MetroLabel();
-            this.textBoxGenre = new System.Windows.Forms.TextBox();
-            this.textBoxYear = new System.Windows.Forms.TextBox();
-            this.textBoxRuntime = new System.Windows.Forms.TextBox();
-            this.textBxLanguage = new System.Windows.Forms.TextBox();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
             this.pictureBoxRight = new System.Windows.Forms.PictureBox();
             this.pictureBoxLeft = new System.Windows.Forms.PictureBox();
             this.pictureBoxMovie = new System.Windows.Forms.PictureBox();
+            this.metroLabel5 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel6 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel7 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel8 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel9 = new MetroFramework.Controls.MetroLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxRight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLeft)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
@@ -82,25 +82,20 @@
             this.metroButton2.UseSelectable = true;
             this.metroButton2.UseStyleColors = true;
             // 
-            // textBoxTitle
-            // 
-            this.textBoxTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxTitle.Location = new System.Drawing.Point(667, 65);
-            this.textBoxTitle.Multiline = true;
-            this.textBoxTitle.Name = "textBoxTitle";
-            this.textBoxTitle.ReadOnly = true;
-            this.textBoxTitle.Size = new System.Drawing.Size(121, 26);
-            this.textBoxTitle.TabIndex = 4;
-            // 
             // metroLabel1
             // 
+            this.metroLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel1.ForeColor = System.Drawing.Color.Green;
             this.metroLabel1.Location = new System.Drawing.Point(537, 65);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(124, 26);
             this.metroLabel1.TabIndex = 5;
             this.metroLabel1.Text = "Title";
+            this.metroLabel1.UseCustomBackColor = true;
+            this.metroLabel1.UseCustomForeColor = true;
+            this.metroLabel1.UseStyleColors = true;
             // 
             // metroBtnSearch
             // 
@@ -122,88 +117,69 @@
             // 
             // metroLabel2
             // 
+            this.metroLabel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel2.ForeColor = System.Drawing.Color.Green;
             this.metroLabel2.Location = new System.Drawing.Point(537, 106);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(124, 26);
             this.metroLabel2.TabIndex = 5;
             this.metroLabel2.Text = "Genre";
+            this.metroLabel2.UseCustomBackColor = true;
+            this.metroLabel2.UseCustomForeColor = true;
+            this.metroLabel2.UseStyleColors = true;
             // 
             // metroLabel3
             // 
+            this.metroLabel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel3.ForeColor = System.Drawing.Color.Green;
             this.metroLabel3.Location = new System.Drawing.Point(537, 147);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(124, 26);
             this.metroLabel3.TabIndex = 5;
             this.metroLabel3.Text = "Year";
+            this.metroLabel3.UseCustomBackColor = true;
+            this.metroLabel3.UseCustomForeColor = true;
+            this.metroLabel3.UseStyleColors = true;
             // 
             // metroLabel4
             // 
+            this.metroLabel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
             this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel4.ForeColor = System.Drawing.Color.Green;
             this.metroLabel4.Location = new System.Drawing.Point(537, 188);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(124, 26);
             this.metroLabel4.TabIndex = 5;
             this.metroLabel4.Text = "RunTime";
+            this.metroLabel4.UseCustomBackColor = true;
+            this.metroLabel4.UseCustomForeColor = true;
+            this.metroLabel4.UseStyleColors = true;
             // 
             // metroLbLanguage
             // 
+            this.metroLbLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
             this.metroLbLanguage.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLbLanguage.ForeColor = System.Drawing.Color.Green;
             this.metroLbLanguage.Location = new System.Drawing.Point(537, 229);
             this.metroLbLanguage.Name = "metroLbLanguage";
             this.metroLbLanguage.Size = new System.Drawing.Size(124, 26);
             this.metroLbLanguage.TabIndex = 5;
             this.metroLbLanguage.Text = "Language";
-            // 
-            // textBoxGenre
-            // 
-            this.textBoxGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxGenre.Location = new System.Drawing.Point(667, 106);
-            this.textBoxGenre.Multiline = true;
-            this.textBoxGenre.Name = "textBoxGenre";
-            this.textBoxGenre.ReadOnly = true;
-            this.textBoxGenre.Size = new System.Drawing.Size(121, 26);
-            this.textBoxGenre.TabIndex = 4;
-            // 
-            // textBoxYear
-            // 
-            this.textBoxYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxYear.Location = new System.Drawing.Point(667, 147);
-            this.textBoxYear.Multiline = true;
-            this.textBoxYear.Name = "textBoxYear";
-            this.textBoxYear.ReadOnly = true;
-            this.textBoxYear.Size = new System.Drawing.Size(121, 26);
-            this.textBoxYear.TabIndex = 4;
-            // 
-            // textBoxRuntime
-            // 
-            this.textBoxRuntime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxRuntime.Location = new System.Drawing.Point(667, 188);
-            this.textBoxRuntime.Multiline = true;
-            this.textBoxRuntime.Name = "textBoxRuntime";
-            this.textBoxRuntime.ReadOnly = true;
-            this.textBoxRuntime.Size = new System.Drawing.Size(121, 26);
-            this.textBoxRuntime.TabIndex = 4;
-            // 
-            // textBxLanguage
-            // 
-            this.textBxLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBxLanguage.Location = new System.Drawing.Point(667, 229);
-            this.textBxLanguage.Multiline = true;
-            this.textBxLanguage.Name = "textBxLanguage";
-            this.textBxLanguage.ReadOnly = true;
-            this.textBxLanguage.Size = new System.Drawing.Size(121, 26);
-            this.textBxLanguage.TabIndex = 4;
+            this.metroLbLanguage.UseCustomBackColor = true;
+            this.metroLbLanguage.UseCustomForeColor = true;
+            this.metroLbLanguage.UseStyleColors = true;
             // 
             // textBoxSearch
             // 
+            this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
             this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.textBoxSearch.ForeColor = System.Drawing.Color.Green;
             this.textBoxSearch.Location = new System.Drawing.Point(28, 12);
             this.textBoxSearch.Multiline = true;
             this.textBoxSearch.Name = "textBoxSearch";
@@ -217,7 +193,7 @@
             // 
             // pictureBoxRight
             // 
-            this.pictureBoxRight.Location = new System.Drawing.Point(255, 556);
+            this.pictureBoxRight.Location = new System.Drawing.Point(254, 569);
             this.pictureBoxRight.Name = "pictureBoxRight";
             this.pictureBoxRight.Size = new System.Drawing.Size(47, 30);
             this.pictureBoxRight.TabIndex = 2;
@@ -227,7 +203,7 @@
             // pictureBoxLeft
             // 
             this.pictureBoxLeft.Image = global::Cinema_System.Properties.Resources.left;
-            this.pictureBoxLeft.Location = new System.Drawing.Point(149, 556);
+            this.pictureBoxLeft.Location = new System.Drawing.Point(148, 569);
             this.pictureBoxLeft.Name = "pictureBoxLeft";
             this.pictureBoxLeft.Size = new System.Drawing.Size(47, 30);
             this.pictureBoxLeft.TabIndex = 2;
@@ -237,11 +213,87 @@
             // pictureBoxMovie
             // 
             this.pictureBoxMovie.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBoxMovie.Location = new System.Drawing.Point(28, 12);
+            this.pictureBoxMovie.Image = global::Cinema_System.Properties.Resources.Cinemaimage;
+            this.pictureBoxMovie.Location = new System.Drawing.Point(28, 59);
             this.pictureBoxMovie.Name = "pictureBoxMovie";
-            this.pictureBoxMovie.Size = new System.Drawing.Size(490, 504);
+            this.pictureBoxMovie.Size = new System.Drawing.Size(490, 479);
             this.pictureBoxMovie.TabIndex = 1;
             this.pictureBoxMovie.TabStop = false;
+            // 
+            // metroLabel5
+            // 
+            this.metroLabel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel5.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel5.ForeColor = System.Drawing.Color.Green;
+            this.metroLabel5.Location = new System.Drawing.Point(666, 65);
+            this.metroLabel5.Name = "metroLabel5";
+            this.metroLabel5.Size = new System.Drawing.Size(124, 26);
+            this.metroLabel5.TabIndex = 5;
+            this.metroLabel5.Text = "Title";
+            this.metroLabel5.UseCustomBackColor = true;
+            this.metroLabel5.UseCustomForeColor = true;
+            this.metroLabel5.UseStyleColors = true;
+            // 
+            // metroLabel6
+            // 
+            this.metroLabel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabel6.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel6.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel6.ForeColor = System.Drawing.Color.Green;
+            this.metroLabel6.Location = new System.Drawing.Point(666, 106);
+            this.metroLabel6.Name = "metroLabel6";
+            this.metroLabel6.Size = new System.Drawing.Size(124, 26);
+            this.metroLabel6.TabIndex = 5;
+            this.metroLabel6.Text = "Genre";
+            this.metroLabel6.UseCustomBackColor = true;
+            this.metroLabel6.UseCustomForeColor = true;
+            this.metroLabel6.UseStyleColors = true;
+            // 
+            // metroLabel7
+            // 
+            this.metroLabel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabel7.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel7.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel7.ForeColor = System.Drawing.Color.Green;
+            this.metroLabel7.Location = new System.Drawing.Point(666, 147);
+            this.metroLabel7.Name = "metroLabel7";
+            this.metroLabel7.Size = new System.Drawing.Size(124, 26);
+            this.metroLabel7.TabIndex = 5;
+            this.metroLabel7.Text = "Year";
+            this.metroLabel7.UseCustomBackColor = true;
+            this.metroLabel7.UseCustomForeColor = true;
+            this.metroLabel7.UseStyleColors = true;
+            // 
+            // metroLabel8
+            // 
+            this.metroLabel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabel8.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel8.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel8.ForeColor = System.Drawing.Color.Green;
+            this.metroLabel8.Location = new System.Drawing.Point(666, 188);
+            this.metroLabel8.Name = "metroLabel8";
+            this.metroLabel8.Size = new System.Drawing.Size(124, 26);
+            this.metroLabel8.TabIndex = 5;
+            this.metroLabel8.Text = "RunTime";
+            this.metroLabel8.UseCustomBackColor = true;
+            this.metroLabel8.UseCustomForeColor = true;
+            this.metroLabel8.UseStyleColors = true;
+            // 
+            // metroLabel9
+            // 
+            this.metroLabel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(76)))), ((int)(((byte)(97)))));
+            this.metroLabel9.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.metroLabel9.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel9.ForeColor = System.Drawing.Color.Green;
+            this.metroLabel9.Location = new System.Drawing.Point(666, 229);
+            this.metroLabel9.Name = "metroLabel9";
+            this.metroLabel9.Size = new System.Drawing.Size(124, 26);
+            this.metroLabel9.TabIndex = 5;
+            this.metroLabel9.Text = "Language";
+            this.metroLabel9.UseCustomBackColor = true;
+            this.metroLabel9.UseCustomForeColor = true;
+            this.metroLabel9.UseStyleColors = true;
             // 
             // Form1
             // 
@@ -251,17 +303,17 @@
             this.ClientSize = new System.Drawing.Size(802, 628);
             this.Controls.Add(this.pictureBoxRight);
             this.Controls.Add(this.pictureBoxLeft);
+            this.Controls.Add(this.metroLabel9);
             this.Controls.Add(this.metroLbLanguage);
+            this.Controls.Add(this.metroLabel8);
             this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.metroLabel7);
+            this.Controls.Add(this.metroLabel6);
             this.Controls.Add(this.metroLabel3);
+            this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.textBoxSearch);
-            this.Controls.Add(this.textBxLanguage);
-            this.Controls.Add(this.textBoxRuntime);
-            this.Controls.Add(this.textBoxYear);
-            this.Controls.Add(this.textBoxGenre);
-            this.Controls.Add(this.textBoxTitle);
             this.Controls.Add(this.pictureBoxMovie);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroBtnSearch);
@@ -284,18 +336,18 @@
         private System.Windows.Forms.PictureBox pictureBoxMovie;
         private System.Windows.Forms.PictureBox pictureBoxLeft;
         private System.Windows.Forms.PictureBox pictureBoxRight;
-        private System.Windows.Forms.TextBox textBoxTitle;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroButton metroBtnSearch;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroLabel metroLbLanguage;
-        private System.Windows.Forms.TextBox textBoxGenre;
-        private System.Windows.Forms.TextBox textBoxYear;
-        private System.Windows.Forms.TextBox textBoxRuntime;
-        private System.Windows.Forms.TextBox textBxLanguage;
         private System.Windows.Forms.TextBox textBoxSearch;
+        private MetroFramework.Controls.MetroLabel metroLabel5;
+        private MetroFramework.Controls.MetroLabel metroLabel6;
+        private MetroFramework.Controls.MetroLabel metroLabel7;
+        private MetroFramework.Controls.MetroLabel metroLabel8;
+        private MetroFramework.Controls.MetroLabel metroLabel9;
     }
 }
 
