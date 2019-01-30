@@ -45,6 +45,7 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBoxSearch = new System.Windows.Forms.TextBox();
+            this.textBoxTest = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -138,6 +139,7 @@
             this.metroBtnSearch.UseCustomForeColor = true;
             this.metroBtnSearch.UseSelectable = true;
             this.metroBtnSearch.UseStyleColors = true;
+            this.metroBtnSearch.Click += new System.EventHandler(this.metroBtnSearch_Click);
             // 
             // metroLabel2
             // 
@@ -231,11 +233,20 @@
             this.textBoxSearch.MouseEnter += new System.EventHandler(this.textBoxSearch_MouseEnter);
             this.textBoxSearch.MouseLeave += new System.EventHandler(this.textBoxSearch_MouseLeave);
             // 
+            // textBoxTest
+            // 
+            this.textBoxTest.Location = new System.Drawing.Point(74, 148);
+            this.textBoxTest.Multiline = true;
+            this.textBoxTest.Name = "textBoxTest";
+            this.textBoxTest.Size = new System.Drawing.Size(218, 107);
+            this.textBoxTest.TabIndex = 6;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(662, 562);
+            this.Controls.Add(this.textBoxTest);
             this.Controls.Add(this.metroLabel5);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
@@ -283,6 +294,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBoxSearch;
+        private System.Windows.Forms.TextBox textBoxTest;
     }
 }
 
