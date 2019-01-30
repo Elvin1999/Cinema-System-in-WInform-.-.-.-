@@ -79,7 +79,7 @@ namespace Cinema_System
                 metroLabelTime.Text = Data.Search[count].Runtime;
                 metroLabelLanguage.Text = Data.Search[count].Language;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 IsNormal = true;
             }
@@ -128,7 +128,14 @@ namespace Cinema_System
             var str = response.Content.ReadAsStringAsync().Result;
             dynamic data = JsonConvert.DeserializeObject(str);
             pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxMovie.Load($@"{data.Poster}");
+            if (data.poster != "n/a")
+            {
+                pictureBoxMovie.Load($@"{data.Poster}");
+            }
+            else
+            {
+                pictureBoxMovie.Image = Properties.Resources.NotFoundImage;
+            }
             metroLabelTitle.Text = data.Title;
             metroLabelGenre.Text = data.Genre;
             metroLabelYear.Text = data.Year;
@@ -151,7 +158,14 @@ namespace Cinema_System
                 var str = response.Content.ReadAsStringAsync().Result;
                 dynamic data = JsonConvert.DeserializeObject(str);
                 pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBoxMovie.Load($@"{data.Poster}");
+                if (data.poster != "n/a")
+                {
+                    pictureBoxMovie.Load($@"{data.Poster}");
+                }
+                else
+                {
+                    pictureBoxMovie.Image = Properties.Resources.NotFoundImage;
+                }
                 metroLabelTitle.Text = data.Title;
                 metroLabelGenre.Text = data.Genre;
                 metroLabelYear.Text = data.Year;
@@ -166,17 +180,32 @@ namespace Cinema_System
             ++count;
             if (count < Data.Search.Count)
             {
-                var response =
-                                                   http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&t={Data.Search[count].Title}&plot=full").Result;
-                var str = response.Content.ReadAsStringAsync().Result;
-                dynamic data = JsonConvert.DeserializeObject(str);
-                pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-                pictureBoxMovie.Load($@"{data.Poster}");
-                metroLabelTitle.Text = data.Title;
-                metroLabelGenre.Text = data.Genre;
-                metroLabelYear.Text = data.Year;
-                metroLabelTime.Text = data.Runtime;
-                metroLabelLanguage.Text = data.Language;
+                try
+                {
+                    var response =
+                                                                       http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&t={Data.Search[count].Title}&plot=full").Result;
+                    var str = response.Content.ReadAsStringAsync().Result;
+                    dynamic data = JsonConvert.DeserializeObject(str);
+                    pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+                    if (data.Poster != "n/a")
+                    {
+                        pictureBoxMovie.Load($@"{data.Poster}");
+                    }
+                    else
+                    {
+                        pictureBoxMovie.Image = Properties.Resources.NotFoundImage;
+                    }
+                    metroLabelTitle.Text = data.Title;
+                    metroLabelGenre.Text = data.Genre;
+                    metroLabelYear.Text = data.Year;
+                    metroLabelTime.Text = data.Runtime;
+                    metroLabelLanguage.Text = data.Language;
+                }
+                catch (Exception)
+                {
+
+                }
+
             }
 
         }

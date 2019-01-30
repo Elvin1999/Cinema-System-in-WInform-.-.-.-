@@ -46,16 +46,17 @@
             this.metroBtLeft = new MetroFramework.Controls.MetroButton();
             this.metroBtRight = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
+            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
             this.SuspendLayout();
             // 
             // metroButton1
             // 
-            this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.metroButton1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.ForeColor = System.Drawing.Color.Green;
+            this.metroButton1.ForeColor = System.Drawing.Color.Yellow;
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(542, 443);
+            this.metroButton1.Location = new System.Drawing.Point(536, 443);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(124, 46);
             this.metroButton1.TabIndex = 0;
@@ -68,11 +69,11 @@
             // 
             // metroButton2
             // 
-            this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.metroButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton2.ForeColor = System.Drawing.Color.Green;
+            this.metroButton2.ForeColor = System.Drawing.Color.Yellow;
             this.metroButton2.Highlight = true;
-            this.metroButton2.Location = new System.Drawing.Point(666, 443);
+            this.metroButton2.Location = new System.Drawing.Point(537, 391);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(124, 46);
             this.metroButton2.TabIndex = 0;
@@ -85,10 +86,10 @@
             // 
             // metroLbTitle
             // 
-            this.metroLbTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLbTitle.BackColor = System.Drawing.Color.Black;
             this.metroLbTitle.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbTitle.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLbTitle.ForeColor = System.Drawing.Color.Green;
+            this.metroLbTitle.ForeColor = System.Drawing.Color.Yellow;
             this.metroLbTitle.Location = new System.Drawing.Point(537, 59);
             this.metroLbTitle.Name = "metroLbTitle";
             this.metroLbTitle.Size = new System.Drawing.Size(124, 26);
@@ -100,10 +101,10 @@
             // 
             // metroBtnSearch
             // 
-            this.metroBtnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.metroBtnSearch.BackColor = System.Drawing.Color.Black;
             this.metroBtnSearch.DisplayFocus = true;
             this.metroBtnSearch.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtnSearch.ForeColor = System.Drawing.Color.Green;
+            this.metroBtnSearch.ForeColor = System.Drawing.Color.Yellow;
             this.metroBtnSearch.Highlight = true;
             this.metroBtnSearch.Location = new System.Drawing.Point(537, 4);
             this.metroBtnSearch.Name = "metroBtnSearch";
@@ -118,10 +119,10 @@
             // 
             // metroLbGenre
             // 
-            this.metroLbGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLbGenre.BackColor = System.Drawing.Color.Black;
             this.metroLbGenre.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbGenre.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLbGenre.ForeColor = System.Drawing.Color.Green;
+            this.metroLbGenre.ForeColor = System.Drawing.Color.Yellow;
             this.metroLbGenre.Location = new System.Drawing.Point(537, 131);
             this.metroLbGenre.Name = "metroLbGenre";
             this.metroLbGenre.Size = new System.Drawing.Size(124, 26);
@@ -133,10 +134,10 @@
             // 
             // metroLbYear
             // 
-            this.metroLbYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLbYear.BackColor = System.Drawing.Color.Black;
             this.metroLbYear.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbYear.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLbYear.ForeColor = System.Drawing.Color.Green;
+            this.metroLbYear.ForeColor = System.Drawing.Color.Yellow;
             this.metroLbYear.Location = new System.Drawing.Point(536, 213);
             this.metroLbYear.Name = "metroLbYear";
             this.metroLbYear.Size = new System.Drawing.Size(124, 26);
@@ -148,10 +149,10 @@
             // 
             // metroLbTime
             // 
-            this.metroLbTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLbTime.BackColor = System.Drawing.Color.Black;
             this.metroLbTime.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbTime.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLbTime.ForeColor = System.Drawing.Color.Green;
+            this.metroLbTime.ForeColor = System.Drawing.Color.Yellow;
             this.metroLbTime.Location = new System.Drawing.Point(536, 254);
             this.metroLbTime.Name = "metroLbTime";
             this.metroLbTime.Size = new System.Drawing.Size(124, 26);
@@ -163,10 +164,10 @@
             // 
             // metroLbLanguage
             // 
-            this.metroLbLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLbLanguage.BackColor = System.Drawing.Color.Black;
             this.metroLbLanguage.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLbLanguage.ForeColor = System.Drawing.Color.Green;
+            this.metroLbLanguage.ForeColor = System.Drawing.Color.Yellow;
             this.metroLbLanguage.Location = new System.Drawing.Point(536, 295);
             this.metroLbLanguage.Name = "metroLbLanguage";
             this.metroLbLanguage.Size = new System.Drawing.Size(124, 26);
@@ -178,9 +179,9 @@
             // 
             // textBoxSearch
             // 
-            this.textBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.textBoxSearch.BackColor = System.Drawing.Color.Black;
             this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxSearch.ForeColor = System.Drawing.Color.Green;
+            this.textBoxSearch.ForeColor = System.Drawing.Color.Yellow;
             this.textBoxSearch.Location = new System.Drawing.Point(28, 4);
             this.textBoxSearch.Multiline = true;
             this.textBoxSearch.Name = "textBoxSearch";
@@ -194,9 +195,9 @@
             // 
             // metroLabelTitle
             // 
-            this.metroLabelTitle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLabelTitle.BackColor = System.Drawing.Color.Black;
             this.metroLabelTitle.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelTitle.ForeColor = System.Drawing.Color.Green;
+            this.metroLabelTitle.ForeColor = System.Drawing.Color.Yellow;
             this.metroLabelTitle.Location = new System.Drawing.Point(666, 59);
             this.metroLabelTitle.Name = "metroLabelTitle";
             this.metroLabelTitle.Size = new System.Drawing.Size(236, 60);
@@ -208,9 +209,9 @@
             // 
             // metroLabelGenre
             // 
-            this.metroLabelGenre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLabelGenre.BackColor = System.Drawing.Color.Black;
             this.metroLabelGenre.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelGenre.ForeColor = System.Drawing.Color.Green;
+            this.metroLabelGenre.ForeColor = System.Drawing.Color.Yellow;
             this.metroLabelGenre.Location = new System.Drawing.Point(666, 131);
             this.metroLabelGenre.Name = "metroLabelGenre";
             this.metroLabelGenre.Size = new System.Drawing.Size(236, 69);
@@ -222,9 +223,9 @@
             // 
             // metroLabelYear
             // 
-            this.metroLabelYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLabelYear.BackColor = System.Drawing.Color.Black;
             this.metroLabelYear.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelYear.ForeColor = System.Drawing.Color.Green;
+            this.metroLabelYear.ForeColor = System.Drawing.Color.Yellow;
             this.metroLabelYear.Location = new System.Drawing.Point(666, 213);
             this.metroLabelYear.Name = "metroLabelYear";
             this.metroLabelYear.Size = new System.Drawing.Size(124, 26);
@@ -236,9 +237,9 @@
             // 
             // metroLabelTime
             // 
-            this.metroLabelTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLabelTime.BackColor = System.Drawing.Color.Black;
             this.metroLabelTime.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelTime.ForeColor = System.Drawing.Color.Green;
+            this.metroLabelTime.ForeColor = System.Drawing.Color.Yellow;
             this.metroLabelTime.Location = new System.Drawing.Point(666, 254);
             this.metroLabelTime.Name = "metroLabelTime";
             this.metroLabelTime.Size = new System.Drawing.Size(124, 26);
@@ -250,9 +251,9 @@
             // 
             // metroLabelLanguage
             // 
-            this.metroLabelLanguage.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(30)))), ((int)(((byte)(42)))));
+            this.metroLabelLanguage.BackColor = System.Drawing.Color.Black;
             this.metroLabelLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelLanguage.ForeColor = System.Drawing.Color.Green;
+            this.metroLabelLanguage.ForeColor = System.Drawing.Color.Yellow;
             this.metroLabelLanguage.Location = new System.Drawing.Point(666, 295);
             this.metroLabelLanguage.Name = "metroLabelLanguage";
             this.metroLabelLanguage.Size = new System.Drawing.Size(124, 26);
@@ -264,7 +265,7 @@
             // 
             // pictureBoxMovie
             // 
-            this.pictureBoxMovie.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBoxMovie.Image = global::Cinema_System.Properties.Resources.Cinemaimage;
             this.pictureBoxMovie.Location = new System.Drawing.Point(28, 59);
             this.pictureBoxMovie.Name = "pictureBoxMovie";
@@ -274,9 +275,9 @@
             // 
             // metroBtLeft
             // 
-            this.metroBtLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.metroBtLeft.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.metroBtLeft.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroBtLeft.ForeColor = System.Drawing.Color.Green;
+            this.metroBtLeft.ForeColor = System.Drawing.Color.Yellow;
             this.metroBtLeft.Highlight = true;
             this.metroBtLeft.Location = new System.Drawing.Point(148, 560);
             this.metroBtLeft.Name = "metroBtLeft";
@@ -292,9 +293,9 @@
             // 
             // metroBtRight
             // 
-            this.metroBtRight.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.metroBtRight.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.metroBtRight.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtRight.ForeColor = System.Drawing.Color.Green;
+            this.metroBtRight.ForeColor = System.Drawing.Color.Yellow;
             this.metroBtRight.Highlight = true;
             this.metroBtRight.Location = new System.Drawing.Point(283, 560);
             this.metroBtRight.Name = "metroBtRight";
@@ -310,9 +311,9 @@
             // 
             // metroButton3
             // 
-            this.metroButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.metroButton3.BackColor = System.Drawing.Color.Black;
             this.metroButton3.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton3.ForeColor = System.Drawing.Color.Green;
+            this.metroButton3.ForeColor = System.Drawing.Color.Yellow;
             this.metroButton3.Highlight = true;
             this.metroButton3.Location = new System.Drawing.Point(846, 4);
             this.metroButton3.Name = "metroButton3";
@@ -326,12 +327,31 @@
             this.metroButton3.UseStyleColors = true;
             this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
+            // metroPanel1
+            // 
+            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.metroPanel1.HorizontalScrollbarBarColor = true;
+            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.HorizontalScrollbarSize = 10;
+            this.metroPanel1.Location = new System.Drawing.Point(677, 488);
+            this.metroPanel1.Name = "metroPanel1";
+            this.metroPanel1.Size = new System.Drawing.Size(218, 128);
+            this.metroPanel1.TabIndex = 6;
+            this.metroPanel1.UseCustomBackColor = true;
+            this.metroPanel1.UseCustomForeColor = true;
+            this.metroPanel1.UseStyleColors = true;
+            this.metroPanel1.UseWaitCursor = true;
+            this.metroPanel1.VerticalScrollbarBarColor = true;
+            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
+            this.metroPanel1.VerticalScrollbarSize = 10;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(907, 628);
+            this.Controls.Add(this.metroPanel1);
             this.Controls.Add(this.metroLabelLanguage);
             this.Controls.Add(this.metroLbLanguage);
             this.Controls.Add(this.metroLabelTime);
@@ -380,6 +400,7 @@
         private MetroFramework.Controls.MetroButton metroBtLeft;
         private MetroFramework.Controls.MetroButton metroBtRight;
         private MetroFramework.Controls.MetroButton metroButton3;
+        private MetroFramework.Controls.MetroPanel metroPanel1;
     }
 }
 
