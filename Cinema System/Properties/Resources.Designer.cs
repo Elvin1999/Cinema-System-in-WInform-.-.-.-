@@ -63,6 +63,16 @@ namespace Cinema_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blurred {
+            get {
+                object obj = ResourceManager.GetObject("blurred", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Cinema {
             get {
                 object obj = ResourceManager.GetObject("Cinema", resourceCulture);
@@ -96,6 +106,26 @@ namespace Cinema_System.Properties {
         internal static System.Drawing.Bitmap left22 {
             get {
                 object obj = ResourceManager.GetObject("left22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap maze111 {
+            get {
+                object obj = ResourceManager.GetObject("maze111", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mazerunner {
+            get {
+                object obj = ResourceManager.GetObject("mazerunner", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

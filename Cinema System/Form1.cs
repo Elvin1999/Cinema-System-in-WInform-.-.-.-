@@ -93,7 +93,7 @@ namespace Cinema_System
             "</body>" +
             "</html>";
                 var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-                webBrowser1.DocumentText = string.Format(embed, url);
+                webBrowserYoutube.DocumentText = string.Format(embed, url);
                 ///
             }
             catch (Exception)
@@ -159,7 +159,7 @@ namespace Cinema_System
             "</body>" +
             "</html>";
                 var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-                webBrowser1.DocumentText = string.Format(embed, url);
+                webBrowserYoutube.DocumentText = string.Format(embed, url);
             }
         }
         public string Url { get; set; }
@@ -199,15 +199,19 @@ namespace Cinema_System
                 "</body>" +
                 "</html>";
                     var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-                    webBrowser1.DocumentText = string.Format(embed, url);
+                    webBrowserYoutube.DocumentText = string.Format(embed, url);
                 }
                 catch (Exception)
                 {
-
                 }
-
             }
 
+        }
+
+        private void metroButton1_Click(object sender, EventArgs e)
+        {
+            MovieHall hall = new MovieHall();
+            hall.Show();
         }
     }
 }

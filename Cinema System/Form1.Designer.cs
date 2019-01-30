@@ -42,11 +42,11 @@
             this.metroLabelYear = new MetroFramework.Controls.MetroLabel();
             this.metroLabelTime = new MetroFramework.Controls.MetroLabel();
             this.metroLabelLanguage = new MetroFramework.Controls.MetroLabel();
-            this.pictureBoxMovie = new System.Windows.Forms.PictureBox();
             this.metroBtLeft = new MetroFramework.Controls.MetroButton();
             this.metroBtRight = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.webBrowserYoutube = new System.Windows.Forms.WebBrowser();
+            this.pictureBoxMovie = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -66,6 +66,7 @@
             this.metroButton1.UseCustomForeColor = true;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.UseStyleColors = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroButton2
             // 
@@ -263,16 +264,6 @@
             this.metroLabelLanguage.UseCustomForeColor = true;
             this.metroLabelLanguage.UseStyleColors = true;
             // 
-            // pictureBoxMovie
-            // 
-            this.pictureBoxMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBoxMovie.Image = global::Cinema_System.Properties.Resources.Cinemaimage;
-            this.pictureBoxMovie.Location = new System.Drawing.Point(28, 59);
-            this.pictureBoxMovie.Name = "pictureBoxMovie";
-            this.pictureBoxMovie.Size = new System.Drawing.Size(460, 430);
-            this.pictureBoxMovie.TabIndex = 1;
-            this.pictureBoxMovie.TabStop = false;
-            // 
             // metroBtLeft
             // 
             this.metroBtLeft.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -327,14 +318,24 @@
             this.metroButton3.UseStyleColors = true;
             this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
-            // webBrowser1
+            // webBrowserYoutube
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(605, 448);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.ScrollBarsEnabled = false;
-            this.webBrowser1.Size = new System.Drawing.Size(290, 168);
-            this.webBrowser1.TabIndex = 7;
+            this.webBrowserYoutube.Location = new System.Drawing.Point(605, 448);
+            this.webBrowserYoutube.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowserYoutube.Name = "webBrowserYoutube";
+            this.webBrowserYoutube.ScrollBarsEnabled = false;
+            this.webBrowserYoutube.Size = new System.Drawing.Size(290, 168);
+            this.webBrowserYoutube.TabIndex = 7;
+            // 
+            // pictureBoxMovie
+            // 
+            this.pictureBoxMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBoxMovie.Image = global::Cinema_System.Properties.Resources.Cinemaimage;
+            this.pictureBoxMovie.Location = new System.Drawing.Point(28, 59);
+            this.pictureBoxMovie.Name = "pictureBoxMovie";
+            this.pictureBoxMovie.Size = new System.Drawing.Size(460, 430);
+            this.pictureBoxMovie.TabIndex = 1;
+            this.pictureBoxMovie.TabStop = false;
             // 
             // Form1
             // 
@@ -342,7 +343,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(907, 628);
-            this.Controls.Add(this.webBrowser1);
+            this.Controls.Add(this.webBrowserYoutube);
             this.Controls.Add(this.metroLabelLanguage);
             this.Controls.Add(this.metroLbLanguage);
             this.Controls.Add(this.metroLabelTime);
@@ -391,7 +392,7 @@
         private MetroFramework.Controls.MetroButton metroBtLeft;
         private MetroFramework.Controls.MetroButton metroBtRight;
         private MetroFramework.Controls.MetroButton metroButton3;
-        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.Windows.Forms.WebBrowser webBrowserYoutube;
     }
 }
 
