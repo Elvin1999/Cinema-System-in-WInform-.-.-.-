@@ -9,6 +9,8 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YoutubeSearch;
+
 namespace Cinema_System
 {
     public partial class Form1 : Form
@@ -18,6 +20,7 @@ namespace Cinema_System
             InitializeComponent();
             pictureBoxMovie.Image = Properties.Resources.Cinemaimage;
             pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -78,6 +81,19 @@ namespace Cinema_System
                 metroLabelYear.Text = Data.Search[count].Year;
                 metroLabelTime.Text = Data.Search[count].Runtime;
                 metroLabelLanguage.Text = Data.Search[count].Language;
+                VideoSearch videos = new VideoSearch();
+                var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
+                var embed = "<html>" +
+                        "<head>" +
+            "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+            "</head>" +
+            "<body>" +
+            "<iframe width=330px height=160px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+            "</body>" +
+            "</html>";
+                var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+                webBrowser1.DocumentText = string.Format(embed, url);
+                ///
             }
             catch (Exception)
             {
@@ -174,7 +190,7 @@ namespace Cinema_System
             }
 
         }
-
+        public string Url { get; set; }
         private void metroBtRight_Click(object sender, EventArgs e)
         {
             ++count;

@@ -46,7 +46,7 @@
             this.metroBtLeft = new MetroFramework.Controls.MetroButton();
             this.metroBtRight = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
-            this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,7 +56,7 @@
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton1.ForeColor = System.Drawing.Color.Yellow;
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(536, 443);
+            this.metroButton1.Location = new System.Drawing.Point(537, 339);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(124, 46);
             this.metroButton1.TabIndex = 0;
@@ -327,23 +327,14 @@
             this.metroButton3.UseStyleColors = true;
             this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
-            // metroPanel1
+            // webBrowser1
             // 
-            this.metroPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.metroPanel1.HorizontalScrollbarBarColor = true;
-            this.metroPanel1.HorizontalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.HorizontalScrollbarSize = 10;
-            this.metroPanel1.Location = new System.Drawing.Point(677, 488);
-            this.metroPanel1.Name = "metroPanel1";
-            this.metroPanel1.Size = new System.Drawing.Size(218, 128);
-            this.metroPanel1.TabIndex = 6;
-            this.metroPanel1.UseCustomBackColor = true;
-            this.metroPanel1.UseCustomForeColor = true;
-            this.metroPanel1.UseStyleColors = true;
-            this.metroPanel1.UseWaitCursor = true;
-            this.metroPanel1.VerticalScrollbarBarColor = true;
-            this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
-            this.metroPanel1.VerticalScrollbarSize = 10;
+            this.webBrowser1.Location = new System.Drawing.Point(605, 448);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScrollBarsEnabled = false;
+            this.webBrowser1.Size = new System.Drawing.Size(290, 168);
+            this.webBrowser1.TabIndex = 7;
             // 
             // Form1
             // 
@@ -351,7 +342,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(907, 628);
-            this.Controls.Add(this.metroPanel1);
+            this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.metroLabelLanguage);
             this.Controls.Add(this.metroLbLanguage);
             this.Controls.Add(this.metroLabelTime);
@@ -400,7 +391,7 @@
         private MetroFramework.Controls.MetroButton metroBtLeft;
         private MetroFramework.Controls.MetroButton metroBtRight;
         private MetroFramework.Controls.MetroButton metroButton3;
-        private MetroFramework.Controls.MetroPanel metroPanel1;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }
 
