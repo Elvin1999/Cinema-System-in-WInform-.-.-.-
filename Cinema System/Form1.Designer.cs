@@ -52,10 +52,11 @@
             // 
             // metroButton1
             // 
-            this.metroButton1.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton1.Location = new System.Drawing.Point(386, 412);
+            this.metroButton1.ForeColor = System.Drawing.Color.Green;
+            this.metroButton1.Highlight = true;
+            this.metroButton1.Location = new System.Drawing.Point(570, 273);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(56, 34);
             this.metroButton1.TabIndex = 0;
@@ -67,10 +68,11 @@
             // 
             // metroButton2
             // 
-            this.metroButton2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
             this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton2.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton2.Location = new System.Drawing.Point(498, 412);
+            this.metroButton2.ForeColor = System.Drawing.Color.Green;
+            this.metroButton2.Highlight = true;
+            this.metroButton2.Location = new System.Drawing.Point(694, 273);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(56, 34);
             this.metroButton2.TabIndex = 0;
@@ -83,7 +85,7 @@
             // textBoxTitle
             // 
             this.textBoxTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxTitle.Location = new System.Drawing.Point(483, 65);
+            this.textBoxTitle.Location = new System.Drawing.Point(667, 65);
             this.textBoxTitle.Multiline = true;
             this.textBoxTitle.Name = "textBoxTitle";
             this.textBoxTitle.ReadOnly = true;
@@ -94,7 +96,7 @@
             // 
             this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(353, 65);
+            this.metroLabel1.Location = new System.Drawing.Point(537, 65);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(124, 26);
             this.metroLabel1.TabIndex = 5;
@@ -102,10 +104,12 @@
             // 
             // metroBtnSearch
             // 
-            this.metroBtnSearch.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.metroBtnSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.metroBtnSearch.DisplayFocus = true;
             this.metroBtnSearch.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtnSearch.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroBtnSearch.Location = new System.Drawing.Point(353, 12);
+            this.metroBtnSearch.ForeColor = System.Drawing.Color.Green;
+            this.metroBtnSearch.Highlight = true;
+            this.metroBtnSearch.Location = new System.Drawing.Point(537, 12);
             this.metroBtnSearch.Name = "metroBtnSearch";
             this.metroBtnSearch.Size = new System.Drawing.Size(124, 26);
             this.metroBtnSearch.TabIndex = 0;
@@ -120,7 +124,7 @@
             // 
             this.metroLabel2.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(353, 106);
+            this.metroLabel2.Location = new System.Drawing.Point(537, 106);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(124, 26);
             this.metroLabel2.TabIndex = 5;
@@ -130,7 +134,7 @@
             // 
             this.metroLabel3.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel3.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel3.Location = new System.Drawing.Point(353, 147);
+            this.metroLabel3.Location = new System.Drawing.Point(537, 147);
             this.metroLabel3.Name = "metroLabel3";
             this.metroLabel3.Size = new System.Drawing.Size(124, 26);
             this.metroLabel3.TabIndex = 5;
@@ -140,7 +144,7 @@
             // 
             this.metroLabel4.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel4.Location = new System.Drawing.Point(353, 188);
+            this.metroLabel4.Location = new System.Drawing.Point(537, 188);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(124, 26);
             this.metroLabel4.TabIndex = 5;
@@ -150,7 +154,7 @@
             // 
             this.metroLbLanguage.FontSize = MetroFramework.MetroLabelSize.Tall;
             this.metroLbLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLbLanguage.Location = new System.Drawing.Point(353, 229);
+            this.metroLbLanguage.Location = new System.Drawing.Point(537, 229);
             this.metroLbLanguage.Name = "metroLbLanguage";
             this.metroLbLanguage.Size = new System.Drawing.Size(124, 26);
             this.metroLbLanguage.TabIndex = 5;
@@ -159,7 +163,7 @@
             // textBoxGenre
             // 
             this.textBoxGenre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxGenre.Location = new System.Drawing.Point(483, 106);
+            this.textBoxGenre.Location = new System.Drawing.Point(667, 106);
             this.textBoxGenre.Multiline = true;
             this.textBoxGenre.Name = "textBoxGenre";
             this.textBoxGenre.ReadOnly = true;
@@ -169,7 +173,7 @@
             // textBoxYear
             // 
             this.textBoxYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxYear.Location = new System.Drawing.Point(483, 147);
+            this.textBoxYear.Location = new System.Drawing.Point(667, 147);
             this.textBoxYear.Multiline = true;
             this.textBoxYear.Name = "textBoxYear";
             this.textBoxYear.ReadOnly = true;
@@ -179,7 +183,7 @@
             // textBoxRuntime
             // 
             this.textBoxRuntime.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBoxRuntime.Location = new System.Drawing.Point(483, 188);
+            this.textBoxRuntime.Location = new System.Drawing.Point(667, 188);
             this.textBoxRuntime.Multiline = true;
             this.textBoxRuntime.Name = "textBoxRuntime";
             this.textBoxRuntime.ReadOnly = true;
@@ -189,7 +193,7 @@
             // textBxLanguage
             // 
             this.textBxLanguage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBxLanguage.Location = new System.Drawing.Point(483, 229);
+            this.textBxLanguage.Location = new System.Drawing.Point(667, 229);
             this.textBxLanguage.Multiline = true;
             this.textBxLanguage.Name = "textBxLanguage";
             this.textBxLanguage.ReadOnly = true;
@@ -200,10 +204,10 @@
             // 
             this.textBoxSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.textBoxSearch.Location = new System.Drawing.Point(353, 261);
+            this.textBoxSearch.Location = new System.Drawing.Point(28, 12);
             this.textBoxSearch.Multiline = true;
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(303, 26);
+            this.textBoxSearch.Size = new System.Drawing.Size(490, 26);
             this.textBoxSearch.TabIndex = 4;
             this.textBoxSearch.Text = "Search movie . . .";
             this.textBoxSearch.Enter += new System.EventHandler(this.textBoxSearch_Enter);
@@ -213,7 +217,7 @@
             // 
             // pictureBoxRight
             // 
-            this.pictureBoxRight.Location = new System.Drawing.Point(198, 469);
+            this.pictureBoxRight.Location = new System.Drawing.Point(255, 556);
             this.pictureBoxRight.Name = "pictureBoxRight";
             this.pictureBoxRight.Size = new System.Drawing.Size(47, 30);
             this.pictureBoxRight.TabIndex = 2;
@@ -223,7 +227,7 @@
             // pictureBoxLeft
             // 
             this.pictureBoxLeft.Image = global::Cinema_System.Properties.Resources.left;
-            this.pictureBoxLeft.Location = new System.Drawing.Point(96, 469);
+            this.pictureBoxLeft.Location = new System.Drawing.Point(149, 556);
             this.pictureBoxLeft.Name = "pictureBoxLeft";
             this.pictureBoxLeft.Size = new System.Drawing.Size(47, 30);
             this.pictureBoxLeft.TabIndex = 2;
@@ -232,10 +236,10 @@
             // 
             // pictureBoxMovie
             // 
-            this.pictureBoxMovie.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pictureBoxMovie.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxMovie.Location = new System.Drawing.Point(28, 12);
             this.pictureBoxMovie.Name = "pictureBoxMovie";
-            this.pictureBoxMovie.Size = new System.Drawing.Size(303, 434);
+            this.pictureBoxMovie.Size = new System.Drawing.Size(490, 504);
             this.pictureBoxMovie.TabIndex = 1;
             this.pictureBoxMovie.TabStop = false;
             // 
@@ -243,7 +247,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(662, 562);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(27)))), ((int)(((byte)(42)))));
+            this.ClientSize = new System.Drawing.Size(802, 628);
+            this.Controls.Add(this.pictureBoxRight);
+            this.Controls.Add(this.pictureBoxLeft);
             this.Controls.Add(this.metroLbLanguage);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.metroLabel3);
@@ -255,8 +262,6 @@
             this.Controls.Add(this.textBoxYear);
             this.Controls.Add(this.textBoxGenre);
             this.Controls.Add(this.textBoxTitle);
-            this.Controls.Add(this.pictureBoxRight);
-            this.Controls.Add(this.pictureBoxLeft);
             this.Controls.Add(this.pictureBoxMovie);
             this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroBtnSearch);
