@@ -89,7 +89,6 @@ namespace Cinema_System
             catch (Exception ex)
             {
                 IsNormal = true;
-                MessageBox.Show("Did not find this movie");
             }
             if (IsNormal)
             {
