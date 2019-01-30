@@ -55,7 +55,7 @@
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton1.ForeColor = System.Drawing.Color.Green;
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(542, 492);
+            this.metroButton1.Location = new System.Drawing.Point(542, 443);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(124, 46);
             this.metroButton1.TabIndex = 0;
@@ -72,7 +72,7 @@
             this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton2.ForeColor = System.Drawing.Color.Green;
             this.metroButton2.Highlight = true;
-            this.metroButton2.Location = new System.Drawing.Point(666, 492);
+            this.metroButton2.Location = new System.Drawing.Point(666, 443);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(124, 46);
             this.metroButton2.TabIndex = 0;
@@ -184,7 +184,7 @@
             this.textBoxSearch.Location = new System.Drawing.Point(28, 4);
             this.textBoxSearch.Multiline = true;
             this.textBoxSearch.Name = "textBoxSearch";
-            this.textBoxSearch.Size = new System.Drawing.Size(490, 26);
+            this.textBoxSearch.Size = new System.Drawing.Size(460, 26);
             this.textBoxSearch.TabIndex = 4;
             this.textBoxSearch.Text = "Search movie . . .";
             this.textBoxSearch.Enter += new System.EventHandler(this.textBoxSearch_Enter);
@@ -268,7 +268,7 @@
             this.pictureBoxMovie.Image = global::Cinema_System.Properties.Resources.Cinemaimage;
             this.pictureBoxMovie.Location = new System.Drawing.Point(28, 59);
             this.pictureBoxMovie.Name = "pictureBoxMovie";
-            this.pictureBoxMovie.Size = new System.Drawing.Size(490, 479);
+            this.pictureBoxMovie.Size = new System.Drawing.Size(460, 430);
             this.pictureBoxMovie.TabIndex = 1;
             this.pictureBoxMovie.TabStop = false;
             // 
@@ -288,6 +288,7 @@
             this.metroBtLeft.UseCustomForeColor = true;
             this.metroBtLeft.UseSelectable = true;
             this.metroBtLeft.UseStyleColors = true;
+            this.metroBtLeft.Click += new System.EventHandler(this.metroBtLeft_Click);
             // 
             // metroBtRight
             // 
@@ -305,6 +306,7 @@
             this.metroBtRight.UseCustomForeColor = true;
             this.metroBtRight.UseSelectable = true;
             this.metroBtRight.UseStyleColors = true;
+            this.metroBtRight.Click += new System.EventHandler(this.metroBtRight_Click);
             // 
             // metroButton3
             // 
