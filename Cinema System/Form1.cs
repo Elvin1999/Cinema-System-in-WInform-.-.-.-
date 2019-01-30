@@ -18,10 +18,12 @@ namespace Cinema_System
             InitializeComponent();
             pictureBoxMovie.Image = Properties.Resources.Cinemaimage;
             pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxLeft.Image = Properties.Resources.left;
-            pictureBoxLeft.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxRight.Image = Properties.Resources.right;
-            pictureBoxRight.SizeMode = PictureBoxSizeMode.StretchImage;
+            //pictureBoxLeft.Image = Properties.Resources.left22;
+            //pictureBoxLeft.SizeMode = PictureBoxSizeMode.StretchImage;
+            //pictureBoxRight.Image = Properties.Resources.right22;
+            //pictureBoxRight.SizeMode = PictureBoxSizeMode.StretchImage;
+
+           
 
         }
 
@@ -75,26 +77,31 @@ namespace Cinema_System
             datalist.Add(str);
             pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBoxMovie.Load($@"{data.Poster}");
-            textBoxTitle.Text = data.Title;
-            textBoxGenre.Text = data.Genre;
-            textBoxYear.Text = data.Year;
-            textBoxRuntime.Text = data.Runtime;
-            textBxLanguage.Text = data.Language;
+            metroLabelTitle.Text = data.Title;
+            metroLabelGenre.Text = data.Genre;
+            metroLabelYear.Text = data.Year;
+            metroLabelTime.Text = data.Runtime;
+            metroLabelLanguage.Text = data.Language;
         }
         int max;
         int count = 0;
         private void pictureBoxRight_Click(object sender, EventArgs e)
         {
-            pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-            dynamic data = JsonConvert.DeserializeObject(datalist[count]);
-            pictureBoxMovie.Load($@"{data.Poster}");
+            //pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+            //dynamic data = JsonConvert.DeserializeObject(datalist[count]);
+            //pictureBoxMovie.Load($@"{data.Poster}");
         }
 
         private void pictureBoxLeft_Click(object sender, EventArgs e)
         {
-            pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-            dynamic data = JsonConvert.DeserializeObject(datalist[count]);
-            pictureBoxMovie.Load($@"{data.Poster}");
+            //pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
+            //dynamic data = JsonConvert.DeserializeObject(datalist[count]);
+            //pictureBoxMovie.Load($@"{data.Poster}");
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

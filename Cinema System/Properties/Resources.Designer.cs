@@ -93,6 +93,16 @@ namespace Cinema_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap left22 {
+            get {
+                object obj = ResourceManager.GetObject("left22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap NotFoundImage {
             get {
                 object obj = ResourceManager.GetObject("NotFoundImage", resourceCulture);
@@ -106,6 +116,16 @@ namespace Cinema_System.Properties {
         internal static System.Drawing.Bitmap right {
             get {
                 object obj = ResourceManager.GetObject("right", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap right22 {
+            get {
+                object obj = ResourceManager.GetObject("right22", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

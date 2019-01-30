@@ -124,13 +124,19 @@
   <data name="right" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\right.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Cinemaimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cinemaimage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Cinema" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cinema.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="NotFoundImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\NotFoundImage.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Cinemaimage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Cinemaimage.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="right22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\right22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="left22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\left22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
