@@ -105,7 +105,7 @@
             this.metroButton69 = new MetroFramework.Controls.MetroButton();
             this.metroButton70 = new MetroFramework.Controls.MetroButton();
             this.labelFilmName = new System.Windows.Forms.Label();
-            this.metroButton71 = new MetroFramework.Controls.MetroButton();
+            this.metroButtonReturn = new MetroFramework.Controls.MetroButton();
             this.labelPlot = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -1319,20 +1319,20 @@
             this.labelFilmName.TabIndex = 2;
             this.labelFilmName.Text = "Name of movie";
             // 
-            // metroButton71
+            // metroButtonReturn
             // 
-            this.metroButton71.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.metroButton71.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton71.Highlight = true;
-            this.metroButton71.Location = new System.Drawing.Point(964, 0);
-            this.metroButton71.Name = "metroButton71";
-            this.metroButton71.Size = new System.Drawing.Size(37, 23);
-            this.metroButton71.TabIndex = 5;
-            this.metroButton71.Text = "<<";
-            this.metroButton71.UseCustomBackColor = true;
-            this.metroButton71.UseCustomForeColor = true;
-            this.metroButton71.UseSelectable = true;
-            this.metroButton71.Click += new System.EventHandler(this.metroButton71_Click);
+            this.metroButtonReturn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.metroButtonReturn.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.metroButtonReturn.Highlight = true;
+            this.metroButtonReturn.Location = new System.Drawing.Point(964, 0);
+            this.metroButtonReturn.Name = "metroButtonReturn";
+            this.metroButtonReturn.Size = new System.Drawing.Size(37, 23);
+            this.metroButtonReturn.TabIndex = 5;
+            this.metroButtonReturn.Text = "<<";
+            this.metroButtonReturn.UseCustomBackColor = true;
+            this.metroButtonReturn.UseCustomForeColor = true;
+            this.metroButtonReturn.UseSelectable = true;
+            this.metroButtonReturn.Click += new System.EventHandler(this.metroButtonReturn_Click_1);
             // 
             // labelPlot
             // 
@@ -1492,7 +1492,7 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.metroButton71);
+            this.Controls.Add(this.metroButtonReturn);
             this.Controls.Add(this.metroButton8);
             this.Controls.Add(this.metroButton7);
             this.Controls.Add(this.metroButton6);
@@ -1664,7 +1664,7 @@
         private MetroFramework.Controls.MetroButton metroButton69;
         private MetroFramework.Controls.MetroButton metroButton70;
         private System.Windows.Forms.Label labelFilmName;
-        private MetroFramework.Controls.MetroButton metroButton71;
+        private MetroFramework.Controls.MetroButton metroButtonReturn;
         private System.Windows.Forms.Label labelPlot;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

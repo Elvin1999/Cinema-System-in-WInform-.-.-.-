@@ -51,20 +51,38 @@ namespace Cinema_System
             point = labelFilmName.Location;
             X = point.X;
             Width = labelFilmName.Width;
-            string ratings = Data.Value;
-            //var nratings = ratings.Split('/');
 
-            MessageBox.Show(ratings);
-            pictureBoxStar1.Image = Properties.Resources.starempty;
-            pictureBoxStar2.Image = Properties.Resources.starempty;
-            pictureBoxStar3.Image = Properties.Resources.starempty;
-            pictureBoxStar4.Image = Properties.Resources.starempty;
-            pictureBoxStar5.Image = Properties.Resources.starempty;
-            pictureBoxStar1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxStar2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxStar3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxStar4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBoxStar5.SizeMode = PictureBoxSizeMode.StretchImage;
+            int iterator;
+            string s = Data.imdbRating.ToString();
+            string newstr = s.Replace('.', ',');
+            double result = double.Parse(newstr);
+
+            //split
+            iterator = Convert.ToInt32(result) / 2;
+           
+            int i = 0;
+            if (iterator != 0)
+            {
+                foreach (var item in this.Controls)
+                {
+                    if (item is PictureBox pb)
+                    {
+                        if (i < iterator)
+                        {
+                            pb.Image = Properties.Resources.star;
+                            pb.SizeMode = PictureBoxSizeMode.StretchImage;
+                            ++i;
+                        }
+                        else
+                        {
+                            pb.Image = Properties.Resources.starempty;
+                            pb.SizeMode = PictureBoxSizeMode.StretchImage;
+                        }
+
+                    }
+                }
+            }
+
 
         }
         Point point = new Point();
@@ -92,7 +110,7 @@ namespace Cinema_System
         {
 
         }
-        private void metroButton71_Click(object sender, EventArgs e)
+        private void metroButtonReturn_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
         }
@@ -101,65 +119,23 @@ namespace Cinema_System
 
         private void MovieHall_Shown(object sender, EventArgs e)
         {
-            VideoSearch videos = new VideoSearch();
-            var tmpUrl = videos.SearchQuery($"{labelFilmName.Text} trailer", 1);
-            var embed = "<html>" +
-                    "<head>" +
-        "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
-        "</head>" +
-        "<body>" +
-        "<iframe width=260px height=165px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
-        "</body>" +
-        "</html>";
-            var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-            webBrowserYoutube.DocumentText = string.Format(embed, url);
-            int iterator;
-            string s = Data.imdbRating.ToString();
-            //split
-            return;
-            if (int.Parse(Data.imdbRating) / 2 == 1)
-            {
-                iterator = 1;
-            }
-            else if (int.Parse(Data.imdbRating) / 2 == 2)
-            {
-                iterator = 2;
-            }
-            else if (int.Parse(Data.imdbRating) / 2 == 3)
-            {
-                iterator = 3;
-            }
-            else if (int.Parse(Data.imdbRating) / 2 == 4)
-            {
-                iterator = 4;
-            }
-            else if (int.Parse(Data.imdbRating) / 2 == 5)
-            {
-                iterator = 5;
-            }
-            else
-            {
-                iterator = 0;
-            }
-            int i = 0;
-            if (iterator != 0)
-            {
-                foreach (var item in this.Controls)
-                {
-                    if (item is PictureBox pb)
-                    {
-                        if (i < iterator)
-                        {
-                            pb.Image = Properties.Resources.star;
-                            pb.SizeMode = PictureBoxSizeMode.StretchImage;
-                            ++i;
-                        }
-
-                    }
-                }
-            }
-
-
+        //    VideoSearch videos = new VideoSearch();
+        //    var tmpUrl = videos.SearchQuery($"{labelFilmName.Text} trailer", 1);
+        //    var embed = "<html>" +
+        //            "<head>" +
+        //"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+        //"</head>" +
+        //"<body>" +
+        //"<iframe width=260px height=165px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+        //"</body>" +
+        //"</html>";
+        //    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+        //    webBrowserYoutube.DocumentText = string.Format(embed, url);
+            
+        }
+        private void metroButtonReturn_Click_1(object sender, EventArgs e)
+        {
+            DialogResult = DialogResult.Cancel;
         }
     }
 }

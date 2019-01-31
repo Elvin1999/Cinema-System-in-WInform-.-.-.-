@@ -82,18 +82,18 @@ namespace Cinema_System
                 labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                 metroLabelLanguage.Text = Data.Search[count].Language;
                 ///
-                VideoSearch videos = new VideoSearch();
-                var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
-                var embed = "<html>" +
-                        "<head>" +
-            "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
-            "</head>" +
-            "<body>" +
-            "<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
-            "</body>" +
-            "</html>";
-                var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-                webBrowserYoutube.DocumentText = string.Format(embed, url);
+            //    VideoSearch videos = new VideoSearch();
+            //    var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
+            //    var embed = "<html>" +
+            //            "<head>" +
+            //"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+            //"</head>" +
+            //"<body>" +
+            //"<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+            //"</body>" +
+            //"</html>";
+            //    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+            //    webBrowserYoutube.DocumentText = string.Format(embed, url);
                 ///
             }
             catch (Exception)
@@ -152,18 +152,18 @@ namespace Cinema_System
                 labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                 metroLabelLanguage.Text = data.Language;
                 SingleData = data;
-                VideoSearch videos = new VideoSearch();
-                var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
-                var embed = "<html>" +
-                        "<head>" +
-            "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
-            "</head>" +
-            "<body>" +
-            "<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
-            "</body>" +
-            "</html>";
-                var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-                webBrowserYoutube.DocumentText = string.Format(embed, url);
+            //    VideoSearch videos = new VideoSearch();
+            //    var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
+            //    var embed = "<html>" +
+            //            "<head>" +
+            //"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+            //"</head>" +
+            //"<body>" +
+            //"<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+            //"</body>" +
+            //"</html>";
+            //    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+            //    webBrowserYoutube.DocumentText = string.Format(embed, url);
                 
             }
         }
@@ -195,18 +195,18 @@ namespace Cinema_System
                     metroLabelLanguage.Text = data.Language;
                     labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                     SingleData = data;
-                    VideoSearch videos = new VideoSearch();
-                    var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
-                    var embed = "<html>" +
-                            "<head>" +
-                "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
-                "</head>" +
-                "<body>" +
-                "<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
-                "</body>" +
-                "</html>";
-                    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-                    webBrowserYoutube.DocumentText = string.Format(embed, url);
+                //    VideoSearch videos = new VideoSearch();
+                //    var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
+                //    var embed = "<html>" +
+                //            "<head>" +
+                //"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+                //"</head>" +
+                //"<body>" +
+                //"<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+                //"</body>" +
+                //"</html>";
+                //    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+                //    webBrowserYoutube.DocumentText = string.Format(embed, url);
                 }
                 catch (Exception ex)
                 {
@@ -216,11 +216,12 @@ namespace Cinema_System
         }
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            if (textBoxSearch.Text != String.Empty&& textBoxSearch.Text!= "Search movie . . .")
+            if (textBoxSearch.Text != String.Empty && textBoxSearch.Text!= "Search movie . . .")
             {                
                 MovieHall hall = new MovieHall();
                 this.Hide();
-                if(hall.ShowDialoq(SingleData)== DialogResult.Cancel)
+
+                if(hall.ShowDialoq(SingleData) == DialogResult.Cancel)
                 {
                     this.Show();
                 }
