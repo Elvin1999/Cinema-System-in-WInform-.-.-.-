@@ -66,7 +66,7 @@ namespace Cinema_System
         "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
         "</head>" +
         "<body>" +
-        "<iframe width=330px height=160px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+        "<iframe width=260px height=165px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
         "</body>" +
         "</html>";
             var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";

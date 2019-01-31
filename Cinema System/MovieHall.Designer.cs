@@ -114,7 +114,7 @@
             // labelCenter
             // 
             this.labelCenter.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.labelCenter.Location = new System.Drawing.Point(80, 64);
+            this.labelCenter.Location = new System.Drawing.Point(3, -2);
             this.labelCenter.Name = "labelCenter";
             this.labelCenter.Size = new System.Drawing.Size(998, 525);
             this.labelCenter.TabIndex = 0;
@@ -122,7 +122,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
-            this.label1.Location = new System.Drawing.Point(100, 101);
+            this.label1.Location = new System.Drawing.Point(23, 35);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(294, 448);
             this.label1.TabIndex = 1;
@@ -130,7 +130,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
-            this.label2.Location = new System.Drawing.Point(430, 101);
+            this.label2.Location = new System.Drawing.Point(353, 35);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(616, 448);
             this.label2.TabIndex = 1;
@@ -140,7 +140,7 @@
             this.labelDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
             this.labelDate.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelDate.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelDate.Location = new System.Drawing.Point(443, 101);
+            this.labelDate.Location = new System.Drawing.Point(366, 35);
             this.labelDate.Name = "labelDate";
             this.labelDate.Size = new System.Drawing.Size(122, 37);
             this.labelDate.TabIndex = 2;
@@ -151,7 +151,7 @@
             this.labelTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
             this.labelTime.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelTime.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelTime.Location = new System.Drawing.Point(571, 101);
+            this.labelTime.Location = new System.Drawing.Point(494, 35);
             this.labelTime.Name = "labelTime";
             this.labelTime.Size = new System.Drawing.Size(169, 37);
             this.labelTime.TabIndex = 2;
@@ -159,7 +159,7 @@
             // 
             // webBrowserYoutube
             // 
-            this.webBrowserYoutube.Location = new System.Drawing.Point(118, 110);
+            this.webBrowserYoutube.Location = new System.Drawing.Point(41, 44);
             this.webBrowserYoutube.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowserYoutube.Name = "webBrowserYoutube";
             this.webBrowserYoutube.Size = new System.Drawing.Size(260, 165);
@@ -170,7 +170,7 @@
             this.label3.BackColor = System.Drawing.Color.Black;
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label3.Location = new System.Drawing.Point(198, 64);
+            this.label3.Location = new System.Drawing.Point(121, -2);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(122, 37);
             this.label3.TabIndex = 2;
@@ -181,7 +181,7 @@
             this.label4.BackColor = System.Drawing.Color.Black;
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label4.Location = new System.Drawing.Point(376, 64);
+            this.label4.Location = new System.Drawing.Point(299, -2);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 37);
             this.label4.TabIndex = 2;
@@ -192,7 +192,7 @@
             this.label5.BackColor = System.Drawing.Color.Black;
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label5.Location = new System.Drawing.Point(98, 64);
+            this.label5.Location = new System.Drawing.Point(21, -2);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(61, 37);
             this.label5.TabIndex = 2;
@@ -204,7 +204,7 @@
             this.metroButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(605, 222);
+            this.metroButton1.Location = new System.Drawing.Point(528, 156);
             this.metroButton1.Name = "metroButton1";
             this.metroButton1.Size = new System.Drawing.Size(31, 23);
             this.metroButton1.TabIndex = 4;
@@ -220,7 +220,7 @@
             this.metroButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton2.Highlight = true;
-            this.metroButton2.Location = new System.Drawing.Point(642, 222);
+            this.metroButton2.Location = new System.Drawing.Point(565, 156);
             this.metroButton2.Name = "metroButton2";
             this.metroButton2.Size = new System.Drawing.Size(31, 23);
             this.metroButton2.TabIndex = 4;
@@ -235,7 +235,7 @@
             this.metroButton3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton3.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton3.Highlight = true;
-            this.metroButton3.Location = new System.Drawing.Point(679, 222);
+            this.metroButton3.Location = new System.Drawing.Point(602, 156);
             this.metroButton3.Name = "metroButton3";
             this.metroButton3.Size = new System.Drawing.Size(31, 23);
             this.metroButton3.TabIndex = 4;
@@ -250,7 +250,7 @@
             this.metroButton4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton4.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton4.Highlight = true;
-            this.metroButton4.Location = new System.Drawing.Point(716, 222);
+            this.metroButton4.Location = new System.Drawing.Point(639, 156);
             this.metroButton4.Name = "metroButton4";
             this.metroButton4.Size = new System.Drawing.Size(31, 23);
             this.metroButton4.TabIndex = 4;
@@ -265,7 +265,7 @@
             this.metroButton5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton5.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton5.Highlight = true;
-            this.metroButton5.Location = new System.Drawing.Point(753, 222);
+            this.metroButton5.Location = new System.Drawing.Point(676, 156);
             this.metroButton5.Name = "metroButton5";
             this.metroButton5.Size = new System.Drawing.Size(31, 23);
             this.metroButton5.TabIndex = 4;
@@ -281,7 +281,7 @@
             this.metroButton6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton6.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton6.Highlight = true;
-            this.metroButton6.Location = new System.Drawing.Point(790, 222);
+            this.metroButton6.Location = new System.Drawing.Point(713, 156);
             this.metroButton6.Name = "metroButton6";
             this.metroButton6.Size = new System.Drawing.Size(31, 23);
             this.metroButton6.TabIndex = 4;
@@ -297,7 +297,7 @@
             this.metroButton7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton7.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroButton7.Highlight = true;
-            this.metroButton7.Location = new System.Drawing.Point(827, 222);
+            this.metroButton7.Location = new System.Drawing.Point(750, 156);
             this.metroButton7.Name = "metroButton7";
             this.metroButton7.Size = new System.Drawing.Size(31, 23);
             this.metroButton7.TabIndex = 4;
@@ -312,7 +312,7 @@
             // 
             this.metroButton8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton8.Highlight = true;
-            this.metroButton8.Location = new System.Drawing.Point(864, 222);
+            this.metroButton8.Location = new System.Drawing.Point(787, 156);
             this.metroButton8.Name = "metroButton8";
             this.metroButton8.Size = new System.Drawing.Size(31, 23);
             this.metroButton8.TabIndex = 4;
@@ -327,7 +327,7 @@
             // 
             this.metroButton9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton9.Highlight = true;
-            this.metroButton9.Location = new System.Drawing.Point(605, 252);
+            this.metroButton9.Location = new System.Drawing.Point(528, 186);
             this.metroButton9.Name = "metroButton9";
             this.metroButton9.Size = new System.Drawing.Size(31, 23);
             this.metroButton9.TabIndex = 4;
@@ -343,7 +343,7 @@
             // 
             this.metroButton10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton10.Highlight = true;
-            this.metroButton10.Location = new System.Drawing.Point(642, 252);
+            this.metroButton10.Location = new System.Drawing.Point(565, 186);
             this.metroButton10.Name = "metroButton10";
             this.metroButton10.Size = new System.Drawing.Size(31, 23);
             this.metroButton10.TabIndex = 4;
@@ -359,7 +359,7 @@
             // 
             this.metroButton11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton11.Highlight = true;
-            this.metroButton11.Location = new System.Drawing.Point(679, 251);
+            this.metroButton11.Location = new System.Drawing.Point(602, 185);
             this.metroButton11.Name = "metroButton11";
             this.metroButton11.Size = new System.Drawing.Size(31, 23);
             this.metroButton11.TabIndex = 4;
@@ -375,7 +375,7 @@
             // 
             this.metroButton12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton12.Highlight = true;
-            this.metroButton12.Location = new System.Drawing.Point(716, 251);
+            this.metroButton12.Location = new System.Drawing.Point(639, 185);
             this.metroButton12.Name = "metroButton12";
             this.metroButton12.Size = new System.Drawing.Size(31, 23);
             this.metroButton12.TabIndex = 4;
@@ -391,7 +391,7 @@
             // 
             this.metroButton13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton13.Highlight = true;
-            this.metroButton13.Location = new System.Drawing.Point(753, 252);
+            this.metroButton13.Location = new System.Drawing.Point(676, 186);
             this.metroButton13.Name = "metroButton13";
             this.metroButton13.Size = new System.Drawing.Size(31, 23);
             this.metroButton13.TabIndex = 4;
@@ -407,7 +407,7 @@
             // 
             this.metroButton14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton14.Highlight = true;
-            this.metroButton14.Location = new System.Drawing.Point(790, 252);
+            this.metroButton14.Location = new System.Drawing.Point(713, 186);
             this.metroButton14.Name = "metroButton14";
             this.metroButton14.Size = new System.Drawing.Size(31, 23);
             this.metroButton14.TabIndex = 4;
@@ -423,7 +423,7 @@
             // 
             this.metroButton15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton15.Highlight = true;
-            this.metroButton15.Location = new System.Drawing.Point(827, 251);
+            this.metroButton15.Location = new System.Drawing.Point(750, 185);
             this.metroButton15.Name = "metroButton15";
             this.metroButton15.Size = new System.Drawing.Size(31, 23);
             this.metroButton15.TabIndex = 4;
@@ -439,7 +439,7 @@
             // 
             this.metroButton16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton16.Highlight = true;
-            this.metroButton16.Location = new System.Drawing.Point(864, 251);
+            this.metroButton16.Location = new System.Drawing.Point(787, 185);
             this.metroButton16.Name = "metroButton16";
             this.metroButton16.Size = new System.Drawing.Size(31, 23);
             this.metroButton16.TabIndex = 4;
@@ -455,7 +455,7 @@
             // 
             this.metroButton17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton17.Highlight = true;
-            this.metroButton17.Location = new System.Drawing.Point(901, 251);
+            this.metroButton17.Location = new System.Drawing.Point(824, 185);
             this.metroButton17.Name = "metroButton17";
             this.metroButton17.Size = new System.Drawing.Size(31, 23);
             this.metroButton17.TabIndex = 4;
@@ -471,7 +471,7 @@
             // 
             this.metroButton18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton18.Highlight = true;
-            this.metroButton18.Location = new System.Drawing.Point(568, 251);
+            this.metroButton18.Location = new System.Drawing.Point(491, 185);
             this.metroButton18.Name = "metroButton18";
             this.metroButton18.Size = new System.Drawing.Size(31, 23);
             this.metroButton18.TabIndex = 4;
@@ -487,7 +487,7 @@
             // 
             this.metroButton19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton19.Highlight = true;
-            this.metroButton19.Location = new System.Drawing.Point(568, 280);
+            this.metroButton19.Location = new System.Drawing.Point(491, 214);
             this.metroButton19.Name = "metroButton19";
             this.metroButton19.Size = new System.Drawing.Size(31, 23);
             this.metroButton19.TabIndex = 4;
@@ -503,7 +503,7 @@
             // 
             this.metroButton20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton20.Highlight = true;
-            this.metroButton20.Location = new System.Drawing.Point(605, 280);
+            this.metroButton20.Location = new System.Drawing.Point(528, 214);
             this.metroButton20.Name = "metroButton20";
             this.metroButton20.Size = new System.Drawing.Size(31, 23);
             this.metroButton20.TabIndex = 4;
@@ -519,7 +519,7 @@
             // 
             this.metroButton21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton21.Highlight = true;
-            this.metroButton21.Location = new System.Drawing.Point(642, 280);
+            this.metroButton21.Location = new System.Drawing.Point(565, 214);
             this.metroButton21.Name = "metroButton21";
             this.metroButton21.Size = new System.Drawing.Size(31, 23);
             this.metroButton21.TabIndex = 4;
@@ -535,7 +535,7 @@
             // 
             this.metroButton22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton22.Highlight = true;
-            this.metroButton22.Location = new System.Drawing.Point(679, 280);
+            this.metroButton22.Location = new System.Drawing.Point(602, 214);
             this.metroButton22.Name = "metroButton22";
             this.metroButton22.Size = new System.Drawing.Size(31, 23);
             this.metroButton22.TabIndex = 4;
@@ -551,7 +551,7 @@
             // 
             this.metroButton23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton23.Highlight = true;
-            this.metroButton23.Location = new System.Drawing.Point(716, 280);
+            this.metroButton23.Location = new System.Drawing.Point(639, 214);
             this.metroButton23.Name = "metroButton23";
             this.metroButton23.Size = new System.Drawing.Size(31, 23);
             this.metroButton23.TabIndex = 4;
@@ -567,7 +567,7 @@
             // 
             this.metroButton24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton24.Highlight = true;
-            this.metroButton24.Location = new System.Drawing.Point(753, 280);
+            this.metroButton24.Location = new System.Drawing.Point(676, 214);
             this.metroButton24.Name = "metroButton24";
             this.metroButton24.Size = new System.Drawing.Size(31, 23);
             this.metroButton24.TabIndex = 4;
@@ -583,7 +583,7 @@
             // 
             this.metroButton25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton25.Highlight = true;
-            this.metroButton25.Location = new System.Drawing.Point(790, 281);
+            this.metroButton25.Location = new System.Drawing.Point(713, 215);
             this.metroButton25.Name = "metroButton25";
             this.metroButton25.Size = new System.Drawing.Size(31, 23);
             this.metroButton25.TabIndex = 4;
@@ -599,7 +599,7 @@
             // 
             this.metroButton26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton26.Highlight = true;
-            this.metroButton26.Location = new System.Drawing.Point(827, 280);
+            this.metroButton26.Location = new System.Drawing.Point(750, 214);
             this.metroButton26.Name = "metroButton26";
             this.metroButton26.Size = new System.Drawing.Size(31, 23);
             this.metroButton26.TabIndex = 4;
@@ -615,7 +615,7 @@
             // 
             this.metroButton27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton27.Highlight = true;
-            this.metroButton27.Location = new System.Drawing.Point(864, 280);
+            this.metroButton27.Location = new System.Drawing.Point(787, 214);
             this.metroButton27.Name = "metroButton27";
             this.metroButton27.Size = new System.Drawing.Size(31, 23);
             this.metroButton27.TabIndex = 4;
@@ -631,7 +631,7 @@
             // 
             this.metroButton28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton28.Highlight = true;
-            this.metroButton28.Location = new System.Drawing.Point(901, 280);
+            this.metroButton28.Location = new System.Drawing.Point(824, 214);
             this.metroButton28.Name = "metroButton28";
             this.metroButton28.Size = new System.Drawing.Size(31, 23);
             this.metroButton28.TabIndex = 4;
@@ -647,7 +647,7 @@
             // 
             this.metroButton29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton29.Highlight = true;
-            this.metroButton29.Location = new System.Drawing.Point(568, 309);
+            this.metroButton29.Location = new System.Drawing.Point(491, 243);
             this.metroButton29.Name = "metroButton29";
             this.metroButton29.Size = new System.Drawing.Size(31, 23);
             this.metroButton29.TabIndex = 4;
@@ -663,7 +663,7 @@
             // 
             this.metroButton30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton30.Highlight = true;
-            this.metroButton30.Location = new System.Drawing.Point(605, 309);
+            this.metroButton30.Location = new System.Drawing.Point(528, 243);
             this.metroButton30.Name = "metroButton30";
             this.metroButton30.Size = new System.Drawing.Size(31, 23);
             this.metroButton30.TabIndex = 4;
@@ -679,7 +679,7 @@
             // 
             this.metroButton31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton31.Highlight = true;
-            this.metroButton31.Location = new System.Drawing.Point(642, 309);
+            this.metroButton31.Location = new System.Drawing.Point(565, 243);
             this.metroButton31.Name = "metroButton31";
             this.metroButton31.Size = new System.Drawing.Size(31, 23);
             this.metroButton31.TabIndex = 4;
@@ -695,7 +695,7 @@
             // 
             this.metroButton32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton32.Highlight = true;
-            this.metroButton32.Location = new System.Drawing.Point(679, 309);
+            this.metroButton32.Location = new System.Drawing.Point(602, 243);
             this.metroButton32.Name = "metroButton32";
             this.metroButton32.Size = new System.Drawing.Size(31, 23);
             this.metroButton32.TabIndex = 4;
@@ -711,7 +711,7 @@
             // 
             this.metroButton33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton33.Highlight = true;
-            this.metroButton33.Location = new System.Drawing.Point(716, 309);
+            this.metroButton33.Location = new System.Drawing.Point(639, 243);
             this.metroButton33.Name = "metroButton33";
             this.metroButton33.Size = new System.Drawing.Size(31, 23);
             this.metroButton33.TabIndex = 4;
@@ -727,7 +727,7 @@
             // 
             this.metroButton34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton34.Highlight = true;
-            this.metroButton34.Location = new System.Drawing.Point(753, 309);
+            this.metroButton34.Location = new System.Drawing.Point(676, 243);
             this.metroButton34.Name = "metroButton34";
             this.metroButton34.Size = new System.Drawing.Size(31, 23);
             this.metroButton34.TabIndex = 4;
@@ -743,7 +743,7 @@
             // 
             this.metroButton35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton35.Highlight = true;
-            this.metroButton35.Location = new System.Drawing.Point(790, 309);
+            this.metroButton35.Location = new System.Drawing.Point(713, 243);
             this.metroButton35.Name = "metroButton35";
             this.metroButton35.Size = new System.Drawing.Size(31, 23);
             this.metroButton35.TabIndex = 4;
@@ -759,7 +759,7 @@
             // 
             this.metroButton36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton36.Highlight = true;
-            this.metroButton36.Location = new System.Drawing.Point(827, 309);
+            this.metroButton36.Location = new System.Drawing.Point(750, 243);
             this.metroButton36.Name = "metroButton36";
             this.metroButton36.Size = new System.Drawing.Size(31, 23);
             this.metroButton36.TabIndex = 4;
@@ -775,7 +775,7 @@
             // 
             this.metroButton37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton37.Highlight = true;
-            this.metroButton37.Location = new System.Drawing.Point(864, 309);
+            this.metroButton37.Location = new System.Drawing.Point(787, 243);
             this.metroButton37.Name = "metroButton37";
             this.metroButton37.Size = new System.Drawing.Size(31, 23);
             this.metroButton37.TabIndex = 4;
@@ -791,7 +791,7 @@
             // 
             this.metroButton38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton38.Highlight = true;
-            this.metroButton38.Location = new System.Drawing.Point(901, 309);
+            this.metroButton38.Location = new System.Drawing.Point(824, 243);
             this.metroButton38.Name = "metroButton38";
             this.metroButton38.Size = new System.Drawing.Size(31, 23);
             this.metroButton38.TabIndex = 4;
@@ -807,7 +807,7 @@
             // 
             this.metroButton39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton39.Highlight = true;
-            this.metroButton39.Location = new System.Drawing.Point(534, 309);
+            this.metroButton39.Location = new System.Drawing.Point(457, 243);
             this.metroButton39.Name = "metroButton39";
             this.metroButton39.Size = new System.Drawing.Size(31, 23);
             this.metroButton39.TabIndex = 4;
@@ -823,7 +823,7 @@
             // 
             this.metroButton40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton40.Highlight = true;
-            this.metroButton40.Location = new System.Drawing.Point(938, 309);
+            this.metroButton40.Location = new System.Drawing.Point(861, 243);
             this.metroButton40.Name = "metroButton40";
             this.metroButton40.Size = new System.Drawing.Size(31, 23);
             this.metroButton40.TabIndex = 4;
@@ -839,7 +839,7 @@
             // 
             this.metroButton41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton41.Highlight = true;
-            this.metroButton41.Location = new System.Drawing.Point(534, 338);
+            this.metroButton41.Location = new System.Drawing.Point(457, 272);
             this.metroButton41.Name = "metroButton41";
             this.metroButton41.Size = new System.Drawing.Size(31, 23);
             this.metroButton41.TabIndex = 4;
@@ -855,7 +855,7 @@
             // 
             this.metroButton42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton42.Highlight = true;
-            this.metroButton42.Location = new System.Drawing.Point(568, 338);
+            this.metroButton42.Location = new System.Drawing.Point(491, 272);
             this.metroButton42.Name = "metroButton42";
             this.metroButton42.Size = new System.Drawing.Size(31, 23);
             this.metroButton42.TabIndex = 4;
@@ -871,7 +871,7 @@
             // 
             this.metroButton43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton43.Highlight = true;
-            this.metroButton43.Location = new System.Drawing.Point(605, 338);
+            this.metroButton43.Location = new System.Drawing.Point(528, 272);
             this.metroButton43.Name = "metroButton43";
             this.metroButton43.Size = new System.Drawing.Size(31, 23);
             this.metroButton43.TabIndex = 4;
@@ -887,7 +887,7 @@
             // 
             this.metroButton44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton44.Highlight = true;
-            this.metroButton44.Location = new System.Drawing.Point(642, 338);
+            this.metroButton44.Location = new System.Drawing.Point(565, 272);
             this.metroButton44.Name = "metroButton44";
             this.metroButton44.Size = new System.Drawing.Size(31, 23);
             this.metroButton44.TabIndex = 4;
@@ -903,7 +903,7 @@
             // 
             this.metroButton45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton45.Highlight = true;
-            this.metroButton45.Location = new System.Drawing.Point(679, 338);
+            this.metroButton45.Location = new System.Drawing.Point(602, 272);
             this.metroButton45.Name = "metroButton45";
             this.metroButton45.Size = new System.Drawing.Size(31, 23);
             this.metroButton45.TabIndex = 4;
@@ -919,7 +919,7 @@
             // 
             this.metroButton46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton46.Highlight = true;
-            this.metroButton46.Location = new System.Drawing.Point(716, 338);
+            this.metroButton46.Location = new System.Drawing.Point(639, 272);
             this.metroButton46.Name = "metroButton46";
             this.metroButton46.Size = new System.Drawing.Size(31, 23);
             this.metroButton46.TabIndex = 4;
@@ -935,7 +935,7 @@
             // 
             this.metroButton47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton47.Highlight = true;
-            this.metroButton47.Location = new System.Drawing.Point(753, 338);
+            this.metroButton47.Location = new System.Drawing.Point(676, 272);
             this.metroButton47.Name = "metroButton47";
             this.metroButton47.Size = new System.Drawing.Size(31, 23);
             this.metroButton47.TabIndex = 4;
@@ -951,7 +951,7 @@
             // 
             this.metroButton48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton48.Highlight = true;
-            this.metroButton48.Location = new System.Drawing.Point(790, 338);
+            this.metroButton48.Location = new System.Drawing.Point(713, 272);
             this.metroButton48.Name = "metroButton48";
             this.metroButton48.Size = new System.Drawing.Size(31, 23);
             this.metroButton48.TabIndex = 4;
@@ -967,7 +967,7 @@
             // 
             this.metroButton49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton49.Highlight = true;
-            this.metroButton49.Location = new System.Drawing.Point(827, 338);
+            this.metroButton49.Location = new System.Drawing.Point(750, 272);
             this.metroButton49.Name = "metroButton49";
             this.metroButton49.Size = new System.Drawing.Size(31, 23);
             this.metroButton49.TabIndex = 4;
@@ -983,7 +983,7 @@
             // 
             this.metroButton50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton50.Highlight = true;
-            this.metroButton50.Location = new System.Drawing.Point(864, 338);
+            this.metroButton50.Location = new System.Drawing.Point(787, 272);
             this.metroButton50.Name = "metroButton50";
             this.metroButton50.Size = new System.Drawing.Size(31, 23);
             this.metroButton50.TabIndex = 4;
@@ -999,7 +999,7 @@
             // 
             this.metroButton51.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton51.Highlight = true;
-            this.metroButton51.Location = new System.Drawing.Point(901, 338);
+            this.metroButton51.Location = new System.Drawing.Point(824, 272);
             this.metroButton51.Name = "metroButton51";
             this.metroButton51.Size = new System.Drawing.Size(31, 23);
             this.metroButton51.TabIndex = 4;
@@ -1015,7 +1015,7 @@
             // 
             this.metroButton52.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton52.Highlight = true;
-            this.metroButton52.Location = new System.Drawing.Point(938, 338);
+            this.metroButton52.Location = new System.Drawing.Point(861, 272);
             this.metroButton52.Name = "metroButton52";
             this.metroButton52.Size = new System.Drawing.Size(31, 23);
             this.metroButton52.TabIndex = 4;
@@ -1031,7 +1031,7 @@
             // 
             this.metroButton53.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton53.Highlight = true;
-            this.metroButton53.Location = new System.Drawing.Point(864, 367);
+            this.metroButton53.Location = new System.Drawing.Point(787, 301);
             this.metroButton53.Name = "metroButton53";
             this.metroButton53.Size = new System.Drawing.Size(31, 23);
             this.metroButton53.TabIndex = 4;
@@ -1047,7 +1047,7 @@
             // 
             this.metroButton54.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton54.Highlight = true;
-            this.metroButton54.Location = new System.Drawing.Point(827, 367);
+            this.metroButton54.Location = new System.Drawing.Point(750, 301);
             this.metroButton54.Name = "metroButton54";
             this.metroButton54.Size = new System.Drawing.Size(31, 23);
             this.metroButton54.TabIndex = 4;
@@ -1063,7 +1063,7 @@
             // 
             this.metroButton55.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton55.Highlight = true;
-            this.metroButton55.Location = new System.Drawing.Point(790, 367);
+            this.metroButton55.Location = new System.Drawing.Point(713, 301);
             this.metroButton55.Name = "metroButton55";
             this.metroButton55.Size = new System.Drawing.Size(31, 23);
             this.metroButton55.TabIndex = 4;
@@ -1079,7 +1079,7 @@
             // 
             this.metroButton56.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton56.Highlight = true;
-            this.metroButton56.Location = new System.Drawing.Point(753, 367);
+            this.metroButton56.Location = new System.Drawing.Point(676, 301);
             this.metroButton56.Name = "metroButton56";
             this.metroButton56.Size = new System.Drawing.Size(31, 23);
             this.metroButton56.TabIndex = 4;
@@ -1095,7 +1095,7 @@
             // 
             this.metroButton57.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton57.Highlight = true;
-            this.metroButton57.Location = new System.Drawing.Point(716, 367);
+            this.metroButton57.Location = new System.Drawing.Point(639, 301);
             this.metroButton57.Name = "metroButton57";
             this.metroButton57.Size = new System.Drawing.Size(31, 23);
             this.metroButton57.TabIndex = 4;
@@ -1111,7 +1111,7 @@
             // 
             this.metroButton58.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton58.Highlight = true;
-            this.metroButton58.Location = new System.Drawing.Point(679, 367);
+            this.metroButton58.Location = new System.Drawing.Point(602, 301);
             this.metroButton58.Name = "metroButton58";
             this.metroButton58.Size = new System.Drawing.Size(31, 23);
             this.metroButton58.TabIndex = 4;
@@ -1127,7 +1127,7 @@
             // 
             this.metroButton59.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton59.Highlight = true;
-            this.metroButton59.Location = new System.Drawing.Point(642, 367);
+            this.metroButton59.Location = new System.Drawing.Point(565, 301);
             this.metroButton59.Name = "metroButton59";
             this.metroButton59.Size = new System.Drawing.Size(31, 23);
             this.metroButton59.TabIndex = 4;
@@ -1143,7 +1143,7 @@
             // 
             this.metroButton60.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton60.Highlight = true;
-            this.metroButton60.Location = new System.Drawing.Point(605, 367);
+            this.metroButton60.Location = new System.Drawing.Point(528, 301);
             this.metroButton60.Name = "metroButton60";
             this.metroButton60.Size = new System.Drawing.Size(31, 23);
             this.metroButton60.TabIndex = 4;
@@ -1159,7 +1159,7 @@
             // 
             this.metroButton61.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton61.Highlight = true;
-            this.metroButton61.Location = new System.Drawing.Point(605, 396);
+            this.metroButton61.Location = new System.Drawing.Point(528, 330);
             this.metroButton61.Name = "metroButton61";
             this.metroButton61.Size = new System.Drawing.Size(31, 23);
             this.metroButton61.TabIndex = 4;
@@ -1175,7 +1175,7 @@
             // 
             this.metroButton62.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton62.Highlight = true;
-            this.metroButton62.Location = new System.Drawing.Point(568, 367);
+            this.metroButton62.Location = new System.Drawing.Point(491, 301);
             this.metroButton62.Name = "metroButton62";
             this.metroButton62.Size = new System.Drawing.Size(31, 23);
             this.metroButton62.TabIndex = 4;
@@ -1191,7 +1191,7 @@
             // 
             this.metroButton63.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton63.Highlight = true;
-            this.metroButton63.Location = new System.Drawing.Point(642, 396);
+            this.metroButton63.Location = new System.Drawing.Point(565, 330);
             this.metroButton63.Name = "metroButton63";
             this.metroButton63.Size = new System.Drawing.Size(31, 23);
             this.metroButton63.TabIndex = 4;
@@ -1207,7 +1207,7 @@
             // 
             this.metroButton64.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton64.Highlight = true;
-            this.metroButton64.Location = new System.Drawing.Point(679, 396);
+            this.metroButton64.Location = new System.Drawing.Point(602, 330);
             this.metroButton64.Name = "metroButton64";
             this.metroButton64.Size = new System.Drawing.Size(31, 23);
             this.metroButton64.TabIndex = 4;
@@ -1223,7 +1223,7 @@
             // 
             this.metroButton65.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton65.Highlight = true;
-            this.metroButton65.Location = new System.Drawing.Point(716, 396);
+            this.metroButton65.Location = new System.Drawing.Point(639, 330);
             this.metroButton65.Name = "metroButton65";
             this.metroButton65.Size = new System.Drawing.Size(31, 23);
             this.metroButton65.TabIndex = 4;
@@ -1239,7 +1239,7 @@
             // 
             this.metroButton66.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton66.Highlight = true;
-            this.metroButton66.Location = new System.Drawing.Point(753, 396);
+            this.metroButton66.Location = new System.Drawing.Point(676, 330);
             this.metroButton66.Name = "metroButton66";
             this.metroButton66.Size = new System.Drawing.Size(31, 23);
             this.metroButton66.TabIndex = 4;
@@ -1255,7 +1255,7 @@
             // 
             this.metroButton67.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton67.Highlight = true;
-            this.metroButton67.Location = new System.Drawing.Point(790, 396);
+            this.metroButton67.Location = new System.Drawing.Point(713, 330);
             this.metroButton67.Name = "metroButton67";
             this.metroButton67.Size = new System.Drawing.Size(31, 23);
             this.metroButton67.TabIndex = 4;
@@ -1271,7 +1271,7 @@
             // 
             this.metroButton68.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton68.Highlight = true;
-            this.metroButton68.Location = new System.Drawing.Point(827, 396);
+            this.metroButton68.Location = new System.Drawing.Point(750, 330);
             this.metroButton68.Name = "metroButton68";
             this.metroButton68.Size = new System.Drawing.Size(31, 23);
             this.metroButton68.TabIndex = 4;
@@ -1287,7 +1287,7 @@
             // 
             this.metroButton69.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton69.Highlight = true;
-            this.metroButton69.Location = new System.Drawing.Point(864, 396);
+            this.metroButton69.Location = new System.Drawing.Point(787, 330);
             this.metroButton69.Name = "metroButton69";
             this.metroButton69.Size = new System.Drawing.Size(31, 23);
             this.metroButton69.TabIndex = 4;
@@ -1303,7 +1303,7 @@
             // 
             this.metroButton70.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
             this.metroButton70.Highlight = true;
-            this.metroButton70.Location = new System.Drawing.Point(901, 367);
+            this.metroButton70.Location = new System.Drawing.Point(824, 301);
             this.metroButton70.Name = "metroButton70";
             this.metroButton70.Size = new System.Drawing.Size(31, 23);
             this.metroButton70.TabIndex = 4;
@@ -1320,7 +1320,7 @@
             this.labelFilmName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
             this.labelFilmName.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFilmName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelFilmName.Location = new System.Drawing.Point(125, 309);
+            this.labelFilmName.Location = new System.Drawing.Point(48, 243);
             this.labelFilmName.Name = "labelFilmName";
             this.labelFilmName.Size = new System.Drawing.Size(235, 37);
             this.labelFilmName.TabIndex = 2;
@@ -1330,7 +1330,8 @@
             // 
             this.metroButton71.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.metroButton71.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroButton71.Location = new System.Drawing.Point(1063, -1);
+            this.metroButton71.Highlight = true;
+            this.metroButton71.Location = new System.Drawing.Point(964, 0);
             this.metroButton71.Name = "metroButton71";
             this.metroButton71.Size = new System.Drawing.Size(37, 23);
             this.metroButton71.TabIndex = 5;
@@ -1344,8 +1345,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Cinema_System.Properties.Resources.blurred;
-            this.ClientSize = new System.Drawing.Size(1100, 639);
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(1004, 519);
             this.Controls.Add(this.metroButton71);
             this.Controls.Add(this.metroButton8);
             this.Controls.Add(this.metroButton7);

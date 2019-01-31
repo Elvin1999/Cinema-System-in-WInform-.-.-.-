@@ -10,7 +10,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using YoutubeSearch;
-
 namespace Cinema_System
 {
     public partial class Form1 : Form
@@ -20,7 +19,6 @@ namespace Cinema_System
             InitializeComponent();
             pictureBoxMovie.Image = Properties.Resources.Cinemaimage;
             pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-
         }
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -91,7 +89,7 @@ namespace Cinema_System
             "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
             "</head>" +
             "<body>" +
-            "<iframe width=330px height=160px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+            "<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
             "</body>" +
             "</html>";
                 var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
@@ -161,11 +159,12 @@ namespace Cinema_System
             "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
             "</head>" +
             "<body>" +
-            "<iframe width=330px height=160px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+            "<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
             "</body>" +
             "</html>";
                 var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
                 webBrowserYoutube.DocumentText = string.Format(embed, url);
+                
             }
         }
         public string Url { get; set; }
@@ -203,7 +202,7 @@ namespace Cinema_System
                 "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
                 "</head>" +
                 "<body>" +
-                "<iframe width=330px height=160px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+                "<iframe width=312px height=194px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
                 "</body>" +
                 "</html>";
                     var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
