@@ -33,12 +33,25 @@ namespace Cinema_System
         {
             Data = data;
             labelFilmName.Text = Data.Title;
-            
+            labelPlot.Text = Data.Plot;
             return base.ShowDialog();
         }
+        int X = 0;
         private void MovieHall_Load(object sender, EventArgs e)
         {
-
+            Timer timer = new Timer();
+            timer.Interval=300;
+            timer.Start();
+            timer.Tick += Timer_Tick;
+            point = labelFilmName.Location;
+            X = point.X;
+        }
+        Point point = new Point();
+        
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            X -= 3;
+            labelFilmName.Location = new Point(X, point.Y);
         }
 
         private void label5_Click(object sender, EventArgs e)

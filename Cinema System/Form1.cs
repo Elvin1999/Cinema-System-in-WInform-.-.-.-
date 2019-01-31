@@ -208,8 +208,9 @@ namespace Cinema_System
                     var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
                     webBrowserYoutube.DocumentText = string.Format(embed, url);
                 }
-                catch (Exception)
+                catch (Exception ex)
                 {
+                    MessageBox.Show(ex.Message);
                 }
             }
         }

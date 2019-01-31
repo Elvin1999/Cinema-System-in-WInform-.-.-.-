@@ -109,6 +109,7 @@
             this.metroButton70 = new MetroFramework.Controls.MetroButton();
             this.labelFilmName = new System.Windows.Forms.Label();
             this.metroButton71 = new MetroFramework.Controls.MetroButton();
+            this.labelPlot = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelCenter
@@ -124,7 +125,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
             this.label1.Location = new System.Drawing.Point(23, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 448);
+            this.label1.Size = new System.Drawing.Size(311, 448);
             this.label1.TabIndex = 1;
             // 
             // label2
@@ -162,7 +163,7 @@
             this.webBrowserYoutube.Location = new System.Drawing.Point(41, 44);
             this.webBrowserYoutube.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowserYoutube.Name = "webBrowserYoutube";
-            this.webBrowserYoutube.Size = new System.Drawing.Size(260, 165);
+            this.webBrowserYoutube.Size = new System.Drawing.Size(274, 165);
             this.webBrowserYoutube.TabIndex = 3;
             // 
             // label3
@@ -1318,11 +1319,11 @@
             // labelFilmName
             // 
             this.labelFilmName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
-            this.labelFilmName.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFilmName.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFilmName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.labelFilmName.Location = new System.Drawing.Point(48, 243);
             this.labelFilmName.Name = "labelFilmName";
-            this.labelFilmName.Size = new System.Drawing.Size(235, 37);
+            this.labelFilmName.Size = new System.Drawing.Size(267, 37);
             this.labelFilmName.TabIndex = 2;
             this.labelFilmName.Text = "Name of movie";
             // 
@@ -1340,6 +1341,17 @@
             this.metroButton71.UseCustomForeColor = true;
             this.metroButton71.UseSelectable = true;
             this.metroButton71.Click += new System.EventHandler(this.metroButton71_Click);
+            // 
+            // labelPlot
+            // 
+            this.labelPlot.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
+            this.labelPlot.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPlot.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelPlot.Location = new System.Drawing.Point(36, 301);
+            this.labelPlot.Name = "labelPlot";
+            this.labelPlot.Size = new System.Drawing.Size(279, 162);
+            this.labelPlot.TabIndex = 2;
+            this.labelPlot.Text = "Description";
             // 
             // MovieHall
             // 
@@ -1423,6 +1435,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelPlot);
             this.Controls.Add(this.labelFilmName);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.label2);
@@ -1520,5 +1533,6 @@
         private MetroFramework.Controls.MetroButton metroButton70;
         private System.Windows.Forms.Label labelFilmName;
         private MetroFramework.Controls.MetroButton metroButton71;
+        private System.Windows.Forms.Label labelPlot;
     }
 }
