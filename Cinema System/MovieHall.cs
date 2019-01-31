@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -45,9 +46,11 @@ namespace Cinema_System
             return base.ShowDialog();
         }
         int X = 0;
+        public string Filename { get; set; }
         MetroFramework.Controls.MetroButton metro;
         private void MovieHall_Load(object sender, EventArgs e)
         {
+            Filename = Data.Title + ".json";
             Timer timer = new Timer();
             timer.Interval = 50;
             timer.Start();
@@ -89,10 +92,12 @@ namespace Cinema_System
             cinema.MovieTitle = Data.Title.ToString();
             cinema.Seats = new List<CinemaSeat>();
             CinemaSeat seat;
-            string filename = Data.Title + ".json";
-            if (File.Exists(filename))
+
+            if (File.Exists(Filename))
             {
-                //copyfile cnima list
+                var text = File.ReadAllText(Filename);
+                var item = JsonConvert.DeserializeObject<Cinema>(text);
+                cinema = item;
             }
             else
             {
@@ -104,7 +109,7 @@ namespace Cinema_System
                     seat.IsWheerchairAccess = false;
                     cinema.Seats.Add(seat);
                 }
-
+          
             }
             cinema.Seats[38].IsWheerchairAccess = true;
             cinema.Seats[39].IsWheerchairAccess = true;
@@ -209,6 +214,8 @@ namespace Cinema_System
 
         private void buttonReturn_Click(object sender, EventArgs e)
         {
+            var feedback = JsonConvert.SerializeObject(cinema);
+            File.WriteAllText(Filename, feedback);
             DialogResult = DialogResult.Cancel;
         }
     }
