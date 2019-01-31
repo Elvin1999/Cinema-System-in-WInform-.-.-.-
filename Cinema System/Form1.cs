@@ -58,6 +58,7 @@ namespace Cinema_System
         public bool IsNormal { get; set; }
         int count = 0;
         public dynamic Data { get; set; }
+        public dynamic SingleData { get; set; }
         HttpClient http = new HttpClient();
         private void metroBtnSearch_Click(object sender, EventArgs e)
         {
@@ -80,7 +81,7 @@ namespace Cinema_System
                 metroLabelGenre.Text = Data.Search[count].Genre;
                 metroLabelYear.Text = Data.Search[count].Year;
                 metroLabelTime.Text = Data.Search[count].Runtime;
-                labelNamemovie.Text = metroLabelTitle.Text+" . . .";
+                labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                 metroLabelLanguage.Text = Data.Search[count].Language;
                 ///
                 VideoSearch videos = new VideoSearch();
@@ -121,8 +122,9 @@ namespace Cinema_System
                 metroLabelTime.Text = data.Runtime;
                 labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                 metroLabelLanguage.Text = data.Language;
+                SingleData = data;
             }
-        }       
+        }
         private void metroButton3_Click(object sender, EventArgs e)
         {
             Application.Exit();
@@ -151,6 +153,7 @@ namespace Cinema_System
                 metroLabelTime.Text = data.Runtime;
                 labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                 metroLabelLanguage.Text = data.Language;
+                SingleData = data;
                 VideoSearch videos = new VideoSearch();
                 var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
                 var embed = "<html>" +
@@ -192,6 +195,7 @@ namespace Cinema_System
                     metroLabelTime.Text = data.Runtime;
                     metroLabelLanguage.Text = data.Language;
                     labelNamemovie.Text = metroLabelTitle.Text + " . . .";
+                    SingleData = data;
                     VideoSearch videos = new VideoSearch();
                     var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
                     var embed = "<html>" +
@@ -209,13 +213,18 @@ namespace Cinema_System
                 {
                 }
             }
-
         }
-
         private void metroButton1_Click(object sender, EventArgs e)
         {
-            MovieHall hall = new MovieHall();
-            hall.Show();
+            if (textBoxSearch.Text != String.Empty&& textBoxSearch.Text!= "Search movie . . .")
+            {                
+                MovieHall hall = new MovieHall();
+                this.Hide();
+                if(hall.ShowDialoq(SingleData)== DialogResult.Cancel)
+                {
+                    this.Show();
+                }
+            }
         }
     }
 }

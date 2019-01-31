@@ -107,6 +107,8 @@
             this.metroButton68 = new MetroFramework.Controls.MetroButton();
             this.metroButton69 = new MetroFramework.Controls.MetroButton();
             this.metroButton70 = new MetroFramework.Controls.MetroButton();
+            this.labelFilmName = new System.Windows.Forms.Label();
+            this.metroButton71 = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // labelCenter
@@ -1313,12 +1315,38 @@
             this.metroButton70.UseStyleColors = true;
             this.metroButton70.Click += new System.EventHandler(this.metroButton1_Click);
             // 
+            // labelFilmName
+            // 
+            this.labelFilmName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(25)))));
+            this.labelFilmName.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFilmName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelFilmName.Location = new System.Drawing.Point(125, 309);
+            this.labelFilmName.Name = "labelFilmName";
+            this.labelFilmName.Size = new System.Drawing.Size(235, 37);
+            this.labelFilmName.TabIndex = 2;
+            this.labelFilmName.Text = "Name of movie";
+            // 
+            // metroButton71
+            // 
+            this.metroButton71.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.metroButton71.FontSize = MetroFramework.MetroButtonSize.Tall;
+            this.metroButton71.Location = new System.Drawing.Point(1063, -1);
+            this.metroButton71.Name = "metroButton71";
+            this.metroButton71.Size = new System.Drawing.Size(37, 23);
+            this.metroButton71.TabIndex = 5;
+            this.metroButton71.Text = "<<";
+            this.metroButton71.UseCustomBackColor = true;
+            this.metroButton71.UseCustomForeColor = true;
+            this.metroButton71.UseSelectable = true;
+            this.metroButton71.Click += new System.EventHandler(this.metroButton71_Click);
+            // 
             // MovieHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Cinema_System.Properties.Resources.blurred;
             this.ClientSize = new System.Drawing.Size(1100, 639);
+            this.Controls.Add(this.metroButton71);
             this.Controls.Add(this.metroButton8);
             this.Controls.Add(this.metroButton7);
             this.Controls.Add(this.metroButton6);
@@ -1394,6 +1422,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
+            this.Controls.Add(this.labelFilmName);
             this.Controls.Add(this.labelDate);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -1402,6 +1431,7 @@
             this.Name = "MovieHall";
             this.Text = "MovieHall";
             this.Load += new System.EventHandler(this.MovieHall_Load);
+            this.Shown += new System.EventHandler(this.MovieHall_Shown);
             this.ResumeLayout(false);
 
         }
@@ -1487,5 +1517,7 @@
         private MetroFramework.Controls.MetroButton metroButton68;
         private MetroFramework.Controls.MetroButton metroButton69;
         private MetroFramework.Controls.MetroButton metroButton70;
+        private System.Windows.Forms.Label labelFilmName;
+        private MetroFramework.Controls.MetroButton metroButton71;
     }
 }

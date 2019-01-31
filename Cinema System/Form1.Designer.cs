@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.metroBtSelect = new MetroFramework.Controls.MetroButton();
             this.metroLbTitle = new MetroFramework.Controls.MetroLabel();
             this.metroBtnSearch = new MetroFramework.Controls.MetroButton();
             this.metroLbGenre = new MetroFramework.Controls.MetroLabel();
@@ -50,23 +50,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
             this.SuspendLayout();
             // 
-            // metroButton1
+            // metroBtSelect
             // 
-            this.metroButton1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.ForeColor = System.Drawing.Color.Yellow;
-            this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(179, 544);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(126, 43);
-            this.metroButton1.TabIndex = 0;
-            this.metroButton1.Text = "Select movie";
-            this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton1.UseCustomBackColor = true;
-            this.metroButton1.UseCustomForeColor = true;
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.UseStyleColors = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.metroBtSelect.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.metroBtSelect.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroBtSelect.ForeColor = System.Drawing.Color.Yellow;
+            this.metroBtSelect.Highlight = true;
+            this.metroBtSelect.Location = new System.Drawing.Point(179, 544);
+            this.metroBtSelect.Name = "metroBtSelect";
+            this.metroBtSelect.Size = new System.Drawing.Size(126, 43);
+            this.metroBtSelect.TabIndex = 0;
+            this.metroBtSelect.Text = "Select movie";
+            this.metroBtSelect.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroBtSelect.UseCustomBackColor = true;
+            this.metroBtSelect.UseCustomForeColor = true;
+            this.metroBtSelect.UseSelectable = true;
+            this.metroBtSelect.UseStyleColors = true;
+            this.metroBtSelect.Click += new System.EventHandler(this.metroButton1_Click);
             // 
             // metroLbTitle
             // 
@@ -354,7 +354,7 @@
             this.Controls.Add(this.metroBtRight);
             this.Controls.Add(this.metroBtLeft);
             this.Controls.Add(this.metroButton3);
-            this.Controls.Add(this.metroButton1);
+            this.Controls.Add(this.metroBtSelect);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
             this.Text = "Form1";
@@ -367,7 +367,7 @@
 
         #endregion
 
-        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton metroBtSelect;
         private System.Windows.Forms.PictureBox pictureBoxMovie;
         private MetroFramework.Controls.MetroLabel metroLbTitle;
         private MetroFramework.Controls.MetroButton metroBtnSearch;
