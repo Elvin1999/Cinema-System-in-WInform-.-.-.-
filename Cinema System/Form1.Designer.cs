@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroLbTitle = new MetroFramework.Controls.MetroLabel();
             this.metroBtnSearch = new MetroFramework.Controls.MetroButton();
             this.metroLbGenre = new MetroFramework.Controls.MetroLabel();
@@ -47,6 +46,7 @@
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.webBrowserYoutube = new System.Windows.Forms.WebBrowser();
             this.pictureBoxMovie = new System.Windows.Forms.PictureBox();
+            this.labelNamemovie = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,34 +56,17 @@
             this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroButton1.ForeColor = System.Drawing.Color.Yellow;
             this.metroButton1.Highlight = true;
-            this.metroButton1.Location = new System.Drawing.Point(537, 339);
+            this.metroButton1.Location = new System.Drawing.Point(179, 544);
             this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(124, 46);
+            this.metroButton1.Size = new System.Drawing.Size(126, 43);
             this.metroButton1.TabIndex = 0;
-            this.metroButton1.Text = "Save";
+            this.metroButton1.Text = "Select movie";
             this.metroButton1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroButton1.UseCustomBackColor = true;
             this.metroButton1.UseCustomForeColor = true;
             this.metroButton1.UseSelectable = true;
             this.metroButton1.UseStyleColors = true;
             this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton2.ForeColor = System.Drawing.Color.Yellow;
-            this.metroButton2.Highlight = true;
-            this.metroButton2.Location = new System.Drawing.Point(537, 391);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(124, 46);
-            this.metroButton2.TabIndex = 0;
-            this.metroButton2.Text = "Open";
-            this.metroButton2.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.metroButton2.UseCustomBackColor = true;
-            this.metroButton2.UseCustomForeColor = true;
-            this.metroButton2.UseSelectable = true;
-            this.metroButton2.UseStyleColors = true;
             // 
             // metroLbTitle
             // 
@@ -270,9 +253,9 @@
             this.metroBtLeft.FontSize = MetroFramework.MetroButtonSize.Tall;
             this.metroBtLeft.ForeColor = System.Drawing.Color.Yellow;
             this.metroBtLeft.Highlight = true;
-            this.metroBtLeft.Location = new System.Drawing.Point(148, 560);
+            this.metroBtLeft.Location = new System.Drawing.Point(99, 544);
             this.metroBtLeft.Name = "metroBtLeft";
-            this.metroBtLeft.Size = new System.Drawing.Size(56, 34);
+            this.metroBtLeft.Size = new System.Drawing.Size(74, 43);
             this.metroBtLeft.TabIndex = 0;
             this.metroBtLeft.Text = " <<<";
             this.metroBtLeft.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -288,9 +271,9 @@
             this.metroBtRight.FontSize = MetroFramework.MetroButtonSize.Medium;
             this.metroBtRight.ForeColor = System.Drawing.Color.Yellow;
             this.metroBtRight.Highlight = true;
-            this.metroBtRight.Location = new System.Drawing.Point(283, 560);
+            this.metroBtRight.Location = new System.Drawing.Point(311, 544);
             this.metroBtRight.Name = "metroBtRight";
-            this.metroBtRight.Size = new System.Drawing.Size(56, 34);
+            this.metroBtRight.Size = new System.Drawing.Size(73, 43);
             this.metroBtRight.TabIndex = 0;
             this.metroBtRight.Text = " >>>";
             this.metroBtRight.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -320,11 +303,11 @@
             // 
             // webBrowserYoutube
             // 
-            this.webBrowserYoutube.Location = new System.Drawing.Point(605, 448);
+            this.webBrowserYoutube.Location = new System.Drawing.Point(583, 422);
             this.webBrowserYoutube.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowserYoutube.Name = "webBrowserYoutube";
             this.webBrowserYoutube.ScrollBarsEnabled = false;
-            this.webBrowserYoutube.Size = new System.Drawing.Size(290, 168);
+            this.webBrowserYoutube.Size = new System.Drawing.Size(312, 194);
             this.webBrowserYoutube.TabIndex = 7;
             // 
             // pictureBoxMovie
@@ -333,9 +316,20 @@
             this.pictureBoxMovie.Image = global::Cinema_System.Properties.Resources.Cinemaimage;
             this.pictureBoxMovie.Location = new System.Drawing.Point(28, 59);
             this.pictureBoxMovie.Name = "pictureBoxMovie";
-            this.pictureBoxMovie.Size = new System.Drawing.Size(460, 430);
+            this.pictureBoxMovie.Size = new System.Drawing.Size(460, 393);
             this.pictureBoxMovie.TabIndex = 1;
             this.pictureBoxMovie.TabStop = false;
+            // 
+            // labelNamemovie
+            // 
+            this.labelNamemovie.AutoEllipsis = true;
+            this.labelNamemovie.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelNamemovie.ForeColor = System.Drawing.Color.Silver;
+            this.labelNamemovie.Location = new System.Drawing.Point(28, 459);
+            this.labelNamemovie.Name = "labelNamemovie";
+            this.labelNamemovie.Size = new System.Drawing.Size(460, 66);
+            this.labelNamemovie.TabIndex = 8;
+            this.labelNamemovie.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
@@ -343,6 +337,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(907, 628);
+            this.Controls.Add(this.labelNamemovie);
             this.Controls.Add(this.webBrowserYoutube);
             this.Controls.Add(this.metroLabelLanguage);
             this.Controls.Add(this.metroLbLanguage);
@@ -356,7 +351,6 @@
             this.Controls.Add(this.metroLbTitle);
             this.Controls.Add(this.textBoxSearch);
             this.Controls.Add(this.pictureBoxMovie);
-            this.Controls.Add(this.metroButton2);
             this.Controls.Add(this.metroBtnSearch);
             this.Controls.Add(this.metroBtRight);
             this.Controls.Add(this.metroBtLeft);
@@ -375,7 +369,6 @@
         #endregion
 
         private MetroFramework.Controls.MetroButton metroButton1;
-        private MetroFramework.Controls.MetroButton metroButton2;
         private System.Windows.Forms.PictureBox pictureBoxMovie;
         private MetroFramework.Controls.MetroLabel metroLbTitle;
         private MetroFramework.Controls.MetroButton metroBtnSearch;
@@ -393,6 +386,7 @@
         private MetroFramework.Controls.MetroButton metroBtRight;
         private MetroFramework.Controls.MetroButton metroButton3;
         private System.Windows.Forms.WebBrowser webBrowserYoutube;
+        private System.Windows.Forms.Label labelNamemovie;
     }
 }
 

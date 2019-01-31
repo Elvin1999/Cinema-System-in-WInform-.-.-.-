@@ -66,7 +66,7 @@ namespace Cinema_System
             metroLabelYear.Text = String.Empty;
             metroLabelTime.Text = String.Empty;
             metroLabelLanguage.Text = String.Empty;
-
+            labelNamemovie.Text = String.Empty;
             HttpResponseMessage response = new HttpResponseMessage();
             response =
                                   http.GetAsync($@"http://www.omdbapi.com/?apikey=ddee1dae&s={textBoxSearch.Text}&plot=full").Result;
@@ -80,6 +80,7 @@ namespace Cinema_System
                 metroLabelGenre.Text = Data.Search[count].Genre;
                 metroLabelYear.Text = Data.Search[count].Year;
                 metroLabelTime.Text = Data.Search[count].Runtime;
+                labelNamemovie.Text = metroLabelTitle.Text+" . . .";
                 metroLabelLanguage.Text = Data.Search[count].Language;
                 ///
                 VideoSearch videos = new VideoSearch();
@@ -118,6 +119,7 @@ namespace Cinema_System
                 metroLabelGenre.Text = data.Genre;
                 metroLabelYear.Text = data.Year;
                 metroLabelTime.Text = data.Runtime;
+                labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                 metroLabelLanguage.Text = data.Language;
             }
         }       
@@ -147,6 +149,7 @@ namespace Cinema_System
                 metroLabelGenre.Text = data.Genre;
                 metroLabelYear.Text = data.Year;
                 metroLabelTime.Text = data.Runtime;
+                labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                 metroLabelLanguage.Text = data.Language;
                 VideoSearch videos = new VideoSearch();
                 var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
@@ -188,6 +191,7 @@ namespace Cinema_System
                     metroLabelYear.Text = data.Year;
                     metroLabelTime.Text = data.Runtime;
                     metroLabelLanguage.Text = data.Language;
+                    labelNamemovie.Text = metroLabelTitle.Text + " . . .";
                     VideoSearch videos = new VideoSearch();
                     var tmpUrl = videos.SearchQuery($"{metroLabelTitle.Text} trailer", 1);
                     var embed = "<html>" +
