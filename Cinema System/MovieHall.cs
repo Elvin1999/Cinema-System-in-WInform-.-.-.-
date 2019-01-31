@@ -44,9 +44,10 @@ namespace Cinema_System
             timer.Tick += Timer_Tick;
             point = labelFilmName.Location;
             X = point.X;
+            Width = labelFilmName.Width;
         }
         Point point = new Point();
-
+        int Width;
         private void Timer_Tick(object sender, EventArgs e)
         {
             X -= 2;
@@ -55,6 +56,7 @@ namespace Cinema_System
             if (X == point.X - 250)
             {
                 X = point.X;
+                labelFilmName.Width = Width;
             }
         }
 
