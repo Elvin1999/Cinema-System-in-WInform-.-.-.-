@@ -45,8 +45,8 @@
             this.metroBtRight = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.webBrowserYoutube = new System.Windows.Forms.WebBrowser();
-            this.pictureBoxMovie = new System.Windows.Forms.PictureBox();
             this.labelNamemovie = new System.Windows.Forms.Label();
+            this.pictureBoxMovie = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxMovie)).BeginInit();
             this.SuspendLayout();
             // 
@@ -310,16 +310,6 @@
             this.webBrowserYoutube.Size = new System.Drawing.Size(312, 194);
             this.webBrowserYoutube.TabIndex = 7;
             // 
-            // pictureBoxMovie
-            // 
-            this.pictureBoxMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBoxMovie.Image = global::Cinema_System.Properties.Resources.Cinemaimage;
-            this.pictureBoxMovie.Location = new System.Drawing.Point(28, 59);
-            this.pictureBoxMovie.Name = "pictureBoxMovie";
-            this.pictureBoxMovie.Size = new System.Drawing.Size(460, 393);
-            this.pictureBoxMovie.TabIndex = 1;
-            this.pictureBoxMovie.TabStop = false;
-            // 
             // labelNamemovie
             // 
             this.labelNamemovie.AutoEllipsis = true;
@@ -329,7 +319,16 @@
             this.labelNamemovie.Name = "labelNamemovie";
             this.labelNamemovie.Size = new System.Drawing.Size(460, 66);
             this.labelNamemovie.TabIndex = 8;
-            this.labelNamemovie.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // pictureBoxMovie
+            // 
+            this.pictureBoxMovie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBoxMovie.Image = global::Cinema_System.Properties.Resources.Cinemaimage;
+            this.pictureBoxMovie.Location = new System.Drawing.Point(28, 59);
+            this.pictureBoxMovie.Name = "pictureBoxMovie";
+            this.pictureBoxMovie.Size = new System.Drawing.Size(460, 393);
+            this.pictureBoxMovie.TabIndex = 1;
+            this.pictureBoxMovie.TabStop = false;
             // 
             // Form1
             // 
