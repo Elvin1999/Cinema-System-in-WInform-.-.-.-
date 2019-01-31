@@ -16,7 +16,6 @@ namespace Cinema_System
         public MovieHall()
         {
             InitializeComponent();
-            this.BackgroundImage = Properties.Resources.blurred;
             labelTime.Text = DateTime.Now.ToLongTimeString();
             labelDate.Text = DateTime.Now.ToLongDateString();
             foreach (var item in this.Controls)
@@ -40,18 +39,23 @@ namespace Cinema_System
         private void MovieHall_Load(object sender, EventArgs e)
         {
             Timer timer = new Timer();
-            timer.Interval=300;
+            timer.Interval = 50;
             timer.Start();
             timer.Tick += Timer_Tick;
             point = labelFilmName.Location;
             X = point.X;
         }
         Point point = new Point();
-        
+
         private void Timer_Tick(object sender, EventArgs e)
         {
-            X -= 3;
+            X -= 2;
             labelFilmName.Location = new Point(X, point.Y);
+            labelFilmName.Width += 4;
+            if (X == point.X - 250)
+            {
+                X = point.X;
+            }
         }
 
         private void label5_Click(object sender, EventArgs e)
@@ -65,14 +69,14 @@ namespace Cinema_System
         }
         private void metroButton71_Click(object sender, EventArgs e)
         {
-            DialogResult = DialogResult.Cancel;          
+            DialogResult = DialogResult.Cancel;
         }
 
 
 
         private void MovieHall_Shown(object sender, EventArgs e)
         {
-             VideoSearch videos = new VideoSearch();
+            VideoSearch videos = new VideoSearch();
             var tmpUrl = videos.SearchQuery($"{labelFilmName.Text} trailer", 1);
             var embed = "<html>" +
                     "<head>" +
