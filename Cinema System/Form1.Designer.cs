@@ -317,7 +317,7 @@
             this.labelNamemovie.ForeColor = System.Drawing.Color.Silver;
             this.labelNamemovie.Location = new System.Drawing.Point(28, 459);
             this.labelNamemovie.Name = "labelNamemovie";
-            this.labelNamemovie.Size = new System.Drawing.Size(460, 66);
+            this.labelNamemovie.Size = new System.Drawing.Size(460, 82);
             this.labelNamemovie.TabIndex = 8;
             // 
             // pictureBoxMovie

@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,8 @@ namespace Cinema_System
                     mb.TextAlign = ContentAlignment.MiddleCenter;
                 }
             }
+
+
         }
         public dynamic Data { get; set; }
         public string Ratings { get; set; }
@@ -42,6 +45,7 @@ namespace Cinema_System
             return base.ShowDialog();
         }
         int X = 0;
+        MetroFramework.Controls.MetroButton metro;
         private void MovieHall_Load(object sender, EventArgs e)
         {
             Timer timer = new Timer();
@@ -56,10 +60,8 @@ namespace Cinema_System
             string s = Data.imdbRating.ToString();
             string newstr = s.Replace('.', ',');
             double result = double.Parse(newstr);
-
             //split
             iterator = Convert.ToInt32(result) / 2;
-           
             int i = 0;
             if (iterator != 0)
             {
@@ -84,7 +86,81 @@ namespace Cinema_System
             }
 
 
+            cinema.MovieTitle = Data.Title.ToString();
+            cinema.Seats = new List<CinemaSeat>();
+            CinemaSeat seat;
+            string filename = Data.Title + ".json";
+            if (File.Exists(filename))
+            {
+                //copyfile cnima list
+            }
+            else
+            {
+                for (int k = 1; k <= 60; k++)
+                {
+                    seat = new CinemaSeat();
+                    seat.Number = k;
+                    seat.IsFull = false;
+                    seat.IsWheerchairAccess = false;
+                    cinema.Seats.Add(seat);
+                }
+
+            }
+            cinema.Seats[38].IsWheerchairAccess = true;
+            cinema.Seats[39].IsWheerchairAccess = true;
+            cinema.Seats[50].IsWheerchairAccess = true;
+            cinema.Seats[51].IsWheerchairAccess = true;
+            int x = 0; int y = 0;
+            for (int k = 1; k <= 60; k++)
+            {
+
+                metro = new MetroFramework.Controls.MetroButton();
+
+                metro.Size = new Size(41, 30);
+                metro.Highlight = true;
+                metro.UseCustomBackColor = true;
+                metro.UseCustomForeColor = true;
+                metro.UseStyleColors = true;
+                metro.Location = new Point(530 + x, 159 + y);
+                metro.Text = cinema.Seats[k - 1].Number.ToString();
+                metro.TextAlign = ContentAlignment.MiddleCenter;
+                if (cinema.Seats[k - 1].IsWheerchairAccess)
+                {
+                    metro.BackColor = Color.Orange;
+                }
+                else if (cinema.Seats[k - 1].IsFull)
+                {
+                    metro.BackColor = Color.Red;
+                }
+                else
+                {
+                    metro.BackColor = Color.FromArgb(16, 20, 30);
+                }
+                metro.ForeColor = Color.Blue;
+                x += 42;
+                if (k % 10 == 0)
+                {
+                    x = 0;
+                    y += 32;
+                }
+                metro.Click += Metro_Click;
+                this.Controls.Add(metro);
+
+            }
         }
+        private void Metro_Click(object sender, EventArgs e)
+        {
+            int number;
+            var mb = sender as MetroFramework.Controls.MetroButton;
+            if (mb.BackColor == Color.FromArgb(16, 20, 30))
+            {
+                mb.BackColor = Color.Lime;
+                number = int.Parse(mb.Text);
+                cinema.Seats[number - 1].IsFull = true;
+            }
+        }
+
+        Cinema cinema = new Cinema();
         Point point = new Point();
         int Width;
         private void Timer_Tick(object sender, EventArgs e)
@@ -92,15 +168,14 @@ namespace Cinema_System
 
             X -= 2;
             labelFilmName.Location = new Point(X, point.Y);
-            labelFilmName.Width += 4;
-            if (X == point.X - 250)
+            labelFilmName.Width += 3;
+            if (X == point.X - 200)
             {
-                X = point.X;
+                X = point.X + 20;
                 labelFilmName.Width = Width;
             }
 
         }
-
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -108,32 +183,31 @@ namespace Cinema_System
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
-
+            Button button = sender as Button;
+            button.BackColor = Color.Green;
         }
         private void metroButtonReturn_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
         }
-
-
-
         private void MovieHall_Shown(object sender, EventArgs e)
         {
-        //    VideoSearch videos = new VideoSearch();
-        //    var tmpUrl = videos.SearchQuery($"{labelFilmName.Text} trailer", 1);
-        //    var embed = "<html>" +
-        //            "<head>" +
-        //"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
-        //"</head>" +
-        //"<body>" +
-        //"<iframe width=260px height=165px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
-        //"</body>" +
-        //"</html>";
-        //    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-        //    webBrowserYoutube.DocumentText = string.Format(embed, url);
-            
+            //    VideoSearch videos = new VideoSearch();
+            //    var tmpUrl = videos.SearchQuery($"{labelFilmName.Text} trailer", 1);
+            //    var embed = "<html>" +
+            //            "<head>" +
+            //"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+            //"</head>" +
+            //"<body>" +
+            //"<iframe width=260px height=165px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+            //"</body>" +
+            //"</html>";
+            //    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+            //    webBrowserYoutube.DocumentText = string.Format(embed, url);            
         }
-        private void metroButtonReturn_Click_1(object sender, EventArgs e)
+
+
+        private void buttonReturn_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
         }
