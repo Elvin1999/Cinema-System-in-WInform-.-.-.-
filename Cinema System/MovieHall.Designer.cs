@@ -116,6 +116,16 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.pictureBoxStar1 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxStar2 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxStar3 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxStar4 = new System.Windows.Forms.PictureBox();
+            this.pictureBoxStar5 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar5)).BeginInit();
             this.SuspendLayout();
             // 
             // labelDate
@@ -1422,12 +1432,58 @@
             this.label12.TabIndex = 2;
             this.label12.Text = "Reserve your ticket";
             // 
+            // pictureBoxStar1
+            // 
+            this.pictureBoxStar1.Image = global::Cinema_System.Properties.Resources.starempty;
+            this.pictureBoxStar1.Location = new System.Drawing.Point(41, 215);
+            this.pictureBoxStar1.Name = "pictureBoxStar1";
+            this.pictureBoxStar1.Size = new System.Drawing.Size(15, 15);
+            this.pictureBoxStar1.TabIndex = 7;
+            this.pictureBoxStar1.TabStop = false;
+            // 
+            // pictureBoxStar2
+            // 
+            this.pictureBoxStar2.Location = new System.Drawing.Point(62, 215);
+            this.pictureBoxStar2.Name = "pictureBoxStar2";
+            this.pictureBoxStar2.Size = new System.Drawing.Size(15, 15);
+            this.pictureBoxStar2.TabIndex = 7;
+            this.pictureBoxStar2.TabStop = false;
+            // 
+            // pictureBoxStar3
+            // 
+            this.pictureBoxStar3.Location = new System.Drawing.Point(83, 215);
+            this.pictureBoxStar3.Name = "pictureBoxStar3";
+            this.pictureBoxStar3.Size = new System.Drawing.Size(15, 15);
+            this.pictureBoxStar3.TabIndex = 7;
+            this.pictureBoxStar3.TabStop = false;
+            // 
+            // pictureBoxStar4
+            // 
+            this.pictureBoxStar4.Location = new System.Drawing.Point(104, 215);
+            this.pictureBoxStar4.Name = "pictureBoxStar4";
+            this.pictureBoxStar4.Size = new System.Drawing.Size(15, 15);
+            this.pictureBoxStar4.TabIndex = 7;
+            this.pictureBoxStar4.TabStop = false;
+            // 
+            // pictureBoxStar5
+            // 
+            this.pictureBoxStar5.Location = new System.Drawing.Point(126, 215);
+            this.pictureBoxStar5.Name = "pictureBoxStar5";
+            this.pictureBoxStar5.Size = new System.Drawing.Size(15, 15);
+            this.pictureBoxStar5.TabIndex = 7;
+            this.pictureBoxStar5.TabStop = false;
+            // 
             // MovieHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1004, 519);
+            this.Controls.Add(this.pictureBoxStar5);
+            this.Controls.Add(this.pictureBoxStar4);
+            this.Controls.Add(this.pictureBoxStar3);
+            this.Controls.Add(this.pictureBoxStar2);
+            this.Controls.Add(this.pictureBoxStar1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label2);
@@ -1521,6 +1577,11 @@
             this.Text = "MovieHall";
             this.Load += new System.EventHandler(this.MovieHall_Load);
             this.Shown += new System.EventHandler(this.MovieHall_Shown);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1614,5 +1675,10 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox pictureBoxStar1;
+        private System.Windows.Forms.PictureBox pictureBoxStar2;
+        private System.Windows.Forms.PictureBox pictureBoxStar3;
+        private System.Windows.Forms.PictureBox pictureBoxStar4;
+        private System.Windows.Forms.PictureBox pictureBoxStar5;
     }
 }
