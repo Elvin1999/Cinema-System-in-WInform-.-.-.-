@@ -16,9 +16,11 @@ namespace Cinema_System
 {
     public partial class MovieHall : Form
     {
+        public double Money { get; set; }
         public MovieHall()
         {
             InitializeComponent();
+            panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
             labelTime.Text = DateTime.Now.ToLongTimeString();
             labelDate.Text = DateTime.Now.ToLongDateString();
             foreach (var item in this.Controls)
@@ -29,8 +31,6 @@ namespace Cinema_System
                     mb.TextAlign = ContentAlignment.MiddleCenter;
                 }
             }
-
-
         }
         public dynamic Data { get; set; }
         public string Ratings { get; set; }
@@ -47,6 +47,8 @@ namespace Cinema_System
         }
         int X = 0;
         public string Filename { get; set; }
+        public double ImdbPoint { get; private set; }
+
         MetroFramework.Controls.MetroButton metro;
         private void MovieHall_Load(object sender, EventArgs e)
         {
@@ -63,6 +65,7 @@ namespace Cinema_System
             string s = Data.imdbRating.ToString();
             string newstr = s.Replace('.', ',');
             double result = double.Parse(newstr);
+            ImdbPoint = result;
             //split
             iterator = Convert.ToInt32(result) / 2;
             int i = 0;
@@ -92,7 +95,6 @@ namespace Cinema_System
             cinema.MovieTitle = Data.Title.ToString();
             cinema.Seats = new List<CinemaSeat>();
             CinemaSeat seat;
-
             if (File.Exists(Filename))
             {
                 var text = File.ReadAllText(Filename);
@@ -109,7 +111,7 @@ namespace Cinema_System
                     seat.IsWheerchairAccess = false;
                     cinema.Seats.Add(seat);
                 }
-          
+
             }
             cinema.Seats[38].IsWheerchairAccess = true;
             cinema.Seats[39].IsWheerchairAccess = true;
@@ -162,7 +164,10 @@ namespace Cinema_System
                 mb.BackColor = Color.Lime;
                 number = int.Parse(mb.Text);
                 cinema.Seats[number - 1].IsFull = true;
+                Money += ImdbPoint;
+                labelMoney1.Text = Money.ToString();
             }
+
         }
 
         Cinema cinema = new Cinema();
@@ -186,11 +191,7 @@ namespace Cinema_System
 
         }
 
-        private void metroButton1_Click(object sender, EventArgs e)
-        {
-            Button button = sender as Button;
-            button.BackColor = Color.Green;
-        }
+
         private void metroButtonReturn_Click(object sender, EventArgs e)
         {
             DialogResult = DialogResult.Cancel;
@@ -218,5 +219,6 @@ namespace Cinema_System
             File.WriteAllText(Filename, feedback);
             DialogResult = DialogResult.Cancel;
         }
+
     }
 }

@@ -51,11 +51,19 @@
             this.pictureBoxStar4 = new System.Windows.Forms.PictureBox();
             this.pictureBoxStar5 = new System.Windows.Forms.PictureBox();
             this.buttonReturn = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.labelTicket = new System.Windows.Forms.Label();
+            this.labelAboutticket = new System.Windows.Forms.Label();
+            this.LabelPrice = new System.Windows.Forms.Label();
+            this.labelDollar = new System.Windows.Forms.Label();
+            this.labelMoney1 = new System.Windows.Forms.Label();
+            this.labelCountTicket = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar5)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // labelDate
@@ -147,7 +155,7 @@
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(20)))), ((int)(((byte)(30)))));
-            this.label1.Location = new System.Drawing.Point(420, 447);
+            this.label1.Location = new System.Drawing.Point(421, 372);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(10, 10);
             this.label1.TabIndex = 6;
@@ -155,7 +163,7 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(545, 447);
+            this.label2.Location = new System.Drawing.Point(546, 372);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(10, 10);
             this.label2.TabIndex = 6;
@@ -163,7 +171,7 @@
             // label6
             // 
             this.label6.BackColor = System.Drawing.Color.Lime;
-            this.label6.Location = new System.Drawing.Point(677, 447);
+            this.label6.Location = new System.Drawing.Point(678, 372);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(10, 10);
             this.label6.TabIndex = 6;
@@ -171,7 +179,7 @@
             // label7
             // 
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(791, 447);
+            this.label7.Location = new System.Drawing.Point(792, 372);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(10, 10);
             this.label7.TabIndex = 6;
@@ -181,7 +189,7 @@
             this.label8.BackColor = System.Drawing.Color.Black;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label8.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label8.Location = new System.Drawing.Point(436, 444);
+            this.label8.Location = new System.Drawing.Point(437, 369);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(89, 19);
             this.label8.TabIndex = 6;
@@ -192,7 +200,7 @@
             this.label9.BackColor = System.Drawing.Color.Black;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label9.Location = new System.Drawing.Point(561, 444);
+            this.label9.Location = new System.Drawing.Point(562, 369);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(89, 19);
             this.label9.TabIndex = 6;
@@ -203,7 +211,7 @@
             this.label10.BackColor = System.Drawing.Color.Black;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label10.Location = new System.Drawing.Point(696, 444);
+            this.label10.Location = new System.Drawing.Point(697, 369);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(65, 19);
             this.label10.TabIndex = 6;
@@ -214,7 +222,7 @@
             this.label11.BackColor = System.Drawing.Color.Black;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label11.Location = new System.Drawing.Point(807, 444);
+            this.label11.Location = new System.Drawing.Point(808, 369);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(119, 19);
             this.label11.TabIndex = 6;
@@ -225,7 +233,7 @@
             this.label12.BackColor = System.Drawing.Color.Black;
             this.label12.Font = new System.Drawing.Font("Comic Sans MS", 14.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label12.Location = new System.Drawing.Point(559, -2);
+            this.label12.Location = new System.Drawing.Point(530, -2);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(232, 37);
             this.label12.TabIndex = 2;
@@ -285,12 +293,89 @@
             this.buttonReturn.UseVisualStyleBackColor = false;
             this.buttonReturn.Click += new System.EventHandler(this.buttonReturn_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.labelCountTicket);
+            this.panel1.Controls.Add(this.labelMoney1);
+            this.panel1.Controls.Add(this.labelDollar);
+            this.panel1.Controls.Add(this.LabelPrice);
+            this.panel1.Controls.Add(this.labelTicket);
+            this.panel1.Location = new System.Drawing.Point(423, 405);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(504, 70);
+            this.panel1.TabIndex = 9;
+            // 
+            // labelTicket
+            // 
+            this.labelTicket.AutoSize = true;
+            this.labelTicket.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelTicket.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelTicket.Location = new System.Drawing.Point(44, 4);
+            this.labelTicket.Name = "labelTicket";
+            this.labelTicket.Size = new System.Drawing.Size(59, 13);
+            this.labelTicket.TabIndex = 0;
+            this.labelTicket.Text = "TICKETS";
+           
+            // 
+            // labelAboutticket
+            // 
+            this.labelAboutticket.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelAboutticket.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelAboutticket.Location = new System.Drawing.Point(772, 478);
+            this.labelAboutticket.Name = "labelAboutticket";
+            this.labelAboutticket.Size = new System.Drawing.Size(250, 30);
+            this.labelAboutticket.TabIndex = 0;
+            this.labelAboutticket.Text = "Broadway Private Cinema Center";
+            // 
+            // LabelPrice
+            // 
+            this.LabelPrice.AutoSize = true;
+            this.LabelPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LabelPrice.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LabelPrice.Location = new System.Drawing.Point(394, 4);
+            this.LabelPrice.Name = "LabelPrice";
+            this.LabelPrice.Size = new System.Drawing.Size(44, 13);
+            this.LabelPrice.TabIndex = 0;
+            this.LabelPrice.Text = "PRICE";
+           
+            // 
+            // labelDollar
+            // 
+            this.labelDollar.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDollar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelDollar.Location = new System.Drawing.Point(422, 31);
+            this.labelDollar.Name = "labelDollar";
+            this.labelDollar.Size = new System.Drawing.Size(27, 20);
+            this.labelDollar.TabIndex = 0;
+            this.labelDollar.Text = "$";
+           
+            // 
+            // labelMoney1
+            // 
+            this.labelMoney1.Font = new System.Drawing.Font("Comic Sans MS", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelMoney1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelMoney1.Location = new System.Drawing.Point(369, 31);
+            this.labelMoney1.Name = "labelMoney1";
+            this.labelMoney1.Size = new System.Drawing.Size(57, 30);
+            this.labelMoney1.TabIndex = 0;
+            // 
+            // labelCountTicket
+            // 
+            this.labelCountTicket.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelCountTicket.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.labelCountTicket.Location = new System.Drawing.Point(13, 31);
+            this.labelCountTicket.Name = "labelCountTicket";
+            this.labelCountTicket.Size = new System.Drawing.Size(57, 20);
+            this.labelCountTicket.TabIndex = 0;
+            // 
             // MovieHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1004, 519);
+            this.Controls.Add(this.labelAboutticket);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonReturn);
             this.Controls.Add(this.pictureBoxStar5);
             this.Controls.Add(this.pictureBoxStar4);
@@ -324,6 +409,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar5)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -352,5 +439,12 @@
         private System.Windows.Forms.PictureBox pictureBoxStar4;
         private System.Windows.Forms.PictureBox pictureBoxStar5;
         private System.Windows.Forms.Button buttonReturn;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label labelAboutticket;
+        private System.Windows.Forms.Label labelTicket;
+        private System.Windows.Forms.Label labelDollar;
+        private System.Windows.Forms.Label LabelPrice;
+        private System.Windows.Forms.Label labelMoney1;
+        private System.Windows.Forms.Label labelCountTicket;
     }
 }
