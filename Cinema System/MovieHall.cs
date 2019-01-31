@@ -114,8 +114,8 @@ namespace Cinema_System
             var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
             webBrowserYoutube.DocumentText = string.Format(embed, url);
             int iterator;
-            double d = double.Parse(Data.imdbRating, CultureInfo.InvariantCulture);
-            MessageBox.Show(d.ToString());
+            string s = Data.imdbRating.ToString();
+            //split
             return;
             if (int.Parse(Data.imdbRating) / 2 == 1)
             {
