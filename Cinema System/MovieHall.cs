@@ -155,21 +155,41 @@ namespace Cinema_System
 
             }
         }
+        int clickcount = 0;
+        string seats;
+        char oldletter; int checkcount = 0;
         private void Metro_Click(object sender, EventArgs e)
         {
             int number;
+
             var mb = sender as MetroFramework.Controls.MetroButton;
             if (mb.BackColor == Color.FromArgb(16, 20, 30))
             {
+
+                ++clickcount;
                 mb.BackColor = Color.Lime;
                 number = int.Parse(mb.Text);
+
+                char rowletter = Convert.ToChar(number / 10 + 65);
+                if (checkcount == 0)
+                {
+                    ++checkcount;
+                    oldletter = rowletter;
+                }
+                if (oldletter != rowletter)
+                {
+                    seats = String.Empty;
+                    oldletter = rowletter;
+                    checkcount = 0;
+                }
+                seats += number + " ";
                 cinema.Seats[number - 1].IsFull = true;
                 Money += ImdbPoint;
                 labelMoney1.Text = Money.ToString();
+                labelCountTicket.Text = clickcount.ToString() + " tickets , " + "Row " + rowletter.ToString()
+                    + " , Seats :" + seats;
             }
-
         }
-
         Cinema cinema = new Cinema();
         Point point = new Point();
         int Width;
@@ -217,6 +237,9 @@ namespace Cinema_System
         {
             var feedback = JsonConvert.SerializeObject(cinema);
             File.WriteAllText(Filename, feedback);
+            clickcount = 0;
+            labelMoney1.Text = String.Empty;
+            labelCountTicket.Text = String.Empty;
             DialogResult = DialogResult.Cancel;
         }
 
