@@ -70,7 +70,6 @@ namespace Cinema_System
             point = labelFilmName.Location;
             X = point.X;
             Width = labelFilmName.Width;
-
             int iterator;
             string s = Data.imdbRating.ToString();
             string newstr = s.Replace('.', ',');
@@ -132,13 +131,12 @@ namespace Cinema_System
             {
 
                 metro = new MetroFramework.Controls.MetroButton();
-
                 metro.Size = new Size(41, 30);
                 metro.Highlight = true;
                 metro.UseCustomBackColor = true;
                 metro.UseCustomForeColor = true;
                 metro.UseStyleColors = true;
-                metro.Location = new Point(530 + x, 127 + y);
+                metro.Location = new Point(520 + x, 95 + y);
                 metro.Text = cinema.Seats[k - 1].Number.ToString();
                 metro.TextAlign = ContentAlignment.MiddleCenter;
                 if (cinema.Seats[k - 1].IsWheerchairAccess)
