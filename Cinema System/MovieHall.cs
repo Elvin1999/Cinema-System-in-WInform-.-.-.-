@@ -23,6 +23,10 @@ namespace Cinema_System
             panel1.BackColor = Color.FromArgb(100, 0, 0, 0);
             labelTime.Text = DateTime.Now.ToLongTimeString();
             labelDate.Text = DateTime.Now.ToLongDateString();
+            Timer timer1000 = new Timer();
+            timer1000.Interval = 1000;
+            timer1000.Start();
+            timer1000.Tick += Timer1000_Tick;
             foreach (var item in this.Controls)
             {
                 if (item is MetroFramework.Controls.MetroButton mb)
@@ -32,6 +36,12 @@ namespace Cinema_System
                 }
             }
         }
+
+        private void Timer1000_Tick(object sender, EventArgs e)
+        {
+            labelTime.Text = DateTime.Now.AddSeconds(1).ToLongTimeString();
+        }
+
         public dynamic Data { get; set; }
         public string Ratings { get; set; }
         public DialogResult ShowDialoq(dynamic data)

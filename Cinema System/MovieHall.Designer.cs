@@ -135,7 +135,7 @@
             this.labelFilmName.BackColor = System.Drawing.Color.Black;
             this.labelFilmName.Font = new System.Drawing.Font("Comic Sans MS", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelFilmName.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelFilmName.Location = new System.Drawing.Point(3, 249);
+            this.labelFilmName.Location = new System.Drawing.Point(1, 242);
             this.labelFilmName.Name = "labelFilmName";
             this.labelFilmName.Size = new System.Drawing.Size(300, 37);
             this.labelFilmName.TabIndex = 2;
@@ -144,7 +144,7 @@
             // labelPlot
             // 
             this.labelPlot.BackColor = System.Drawing.Color.Black;
-            this.labelPlot.Font = new System.Drawing.Font("Comic Sans MS", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPlot.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPlot.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.labelPlot.Location = new System.Drawing.Point(38, 295);
             this.labelPlot.Name = "labelPlot";
