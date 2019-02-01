@@ -60,6 +60,43 @@ namespace Cinema_System
         public double ImdbPoint { get; private set; }
 
         MetroFramework.Controls.MetroButton metro;
+        private char GetCurrentRawByLetter(int number)
+        {
+            char letter;
+            if (number >= 1&&number<=8)
+            {
+                letter = 'A';
+            }
+            else if (number >= 9 && number <= 18)
+            {
+                letter = 'B';
+            }
+            else if (number >= 19 && number <= 28)
+            {
+                letter = 'C';
+            }
+            else if (number >= 29 && number <= 40)
+            {
+                letter = 'D';
+            }
+            else if (number >= 41 && number <= 52)
+            {
+                letter = 'E';
+            }
+            else if (number >= 53 && number <= 62)
+            {
+                letter = 'F';
+            }
+            else if (number >= 63 && number <= 70)
+            {
+                letter = 'G';
+            }
+            else
+            {
+                letter = '.';
+            }
+            return letter;
+        }
         private void MovieHall_Load(object sender, EventArgs e)
         {
             Filename = Data.Title + ".json";
@@ -185,9 +222,10 @@ namespace Cinema_System
         int clickcount = 0;
         string seats;
         char oldletter; int checkcount = 0;
+        int number;
         private void Metro_Click(object sender, EventArgs e)
         {
-            int number;
+            
 
             var mb = sender as MetroFramework.Controls.MetroButton;
             if (mb.BackColor == Color.FromArgb(16, 20, 30))
@@ -197,7 +235,7 @@ namespace Cinema_System
                 mb.BackColor = Color.Lime;
                 number = int.Parse(mb.Text);
 
-                char rowletter = Convert.ToChar(number / 10 + 65);
+                char rowletter = GetCurrentRawByLetter(number);
                 if (checkcount == 0)
                 {
                     ++checkcount;

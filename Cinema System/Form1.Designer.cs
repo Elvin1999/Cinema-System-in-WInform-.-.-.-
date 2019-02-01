@@ -54,7 +54,7 @@
             // 
             this.metroBtSelect.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.metroBtSelect.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtSelect.ForeColor = System.Drawing.Color.Yellow;
+            this.metroBtSelect.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroBtSelect.Highlight = true;
             this.metroBtSelect.Location = new System.Drawing.Point(179, 544);
             this.metroBtSelect.Name = "metroBtSelect";
@@ -179,7 +179,7 @@
             // 
             this.metroLabelTitle.BackColor = System.Drawing.Color.Black;
             this.metroLabelTitle.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelTitle.ForeColor = System.Drawing.Color.Yellow;
+            this.metroLabelTitle.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroLabelTitle.Location = new System.Drawing.Point(666, 59);
             this.metroLabelTitle.Name = "metroLabelTitle";
             this.metroLabelTitle.Size = new System.Drawing.Size(236, 60);
@@ -193,7 +193,7 @@
             // 
             this.metroLabelGenre.BackColor = System.Drawing.Color.Black;
             this.metroLabelGenre.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelGenre.ForeColor = System.Drawing.Color.Yellow;
+            this.metroLabelGenre.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroLabelGenre.Location = new System.Drawing.Point(666, 131);
             this.metroLabelGenre.Name = "metroLabelGenre";
             this.metroLabelGenre.Size = new System.Drawing.Size(236, 69);
@@ -207,7 +207,7 @@
             // 
             this.metroLabelYear.BackColor = System.Drawing.Color.Black;
             this.metroLabelYear.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelYear.ForeColor = System.Drawing.Color.Yellow;
+            this.metroLabelYear.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroLabelYear.Location = new System.Drawing.Point(666, 213);
             this.metroLabelYear.Name = "metroLabelYear";
             this.metroLabelYear.Size = new System.Drawing.Size(124, 26);
@@ -221,7 +221,7 @@
             // 
             this.metroLabelTime.BackColor = System.Drawing.Color.Black;
             this.metroLabelTime.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelTime.ForeColor = System.Drawing.Color.Yellow;
+            this.metroLabelTime.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroLabelTime.Location = new System.Drawing.Point(666, 254);
             this.metroLabelTime.Name = "metroLabelTime";
             this.metroLabelTime.Size = new System.Drawing.Size(124, 26);
@@ -235,7 +235,7 @@
             // 
             this.metroLabelLanguage.BackColor = System.Drawing.Color.Black;
             this.metroLabelLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabelLanguage.ForeColor = System.Drawing.Color.Yellow;
+            this.metroLabelLanguage.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroLabelLanguage.Location = new System.Drawing.Point(666, 295);
             this.metroLabelLanguage.Name = "metroLabelLanguage";
             this.metroLabelLanguage.Size = new System.Drawing.Size(124, 26);
@@ -249,7 +249,7 @@
             // 
             this.metroBtLeft.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.metroBtLeft.FontSize = MetroFramework.MetroButtonSize.Tall;
-            this.metroBtLeft.ForeColor = System.Drawing.Color.Yellow;
+            this.metroBtLeft.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroBtLeft.Highlight = true;
             this.metroBtLeft.Location = new System.Drawing.Point(99, 544);
             this.metroBtLeft.Name = "metroBtLeft";
@@ -267,7 +267,7 @@
             // 
             this.metroBtRight.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.metroBtRight.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroBtRight.ForeColor = System.Drawing.Color.Yellow;
+            this.metroBtRight.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.metroBtRight.Highlight = true;
             this.metroBtRight.Location = new System.Drawing.Point(311, 544);
             this.metroBtRight.Name = "metroBtRight";
@@ -312,7 +312,7 @@
             // 
             this.labelNamemovie.AutoEllipsis = true;
             this.labelNamemovie.Font = new System.Drawing.Font("Comic Sans MS", 20.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelNamemovie.ForeColor = System.Drawing.Color.Silver;
+            this.labelNamemovie.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.labelNamemovie.Location = new System.Drawing.Point(28, 459);
             this.labelNamemovie.Name = "labelNamemovie";
             this.labelNamemovie.Size = new System.Drawing.Size(460, 82);

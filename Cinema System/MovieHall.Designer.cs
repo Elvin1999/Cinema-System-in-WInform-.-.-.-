@@ -58,6 +58,13 @@
             this.LabelPrice = new System.Windows.Forms.Label();
             this.labelTicket = new System.Windows.Forms.Label();
             this.labelAboutticket = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.label19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar3)).BeginInit();
@@ -146,11 +153,12 @@
             this.labelPlot.BackColor = System.Drawing.Color.Black;
             this.labelPlot.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPlot.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelPlot.Location = new System.Drawing.Point(38, 295);
+            this.labelPlot.Location = new System.Drawing.Point(23, 295);
             this.labelPlot.Name = "labelPlot";
-            this.labelPlot.Size = new System.Drawing.Size(322, 180);
+            this.labelPlot.Size = new System.Drawing.Size(351, 215);
             this.labelPlot.TabIndex = 2;
             this.labelPlot.Text = "Description";
+            this.labelPlot.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label1
             // 
@@ -366,12 +374,103 @@
             this.labelAboutticket.TabIndex = 0;
             this.labelAboutticket.Text = "Broadway Private Cinema Center";
             // 
+            // label13
+            // 
+            this.label13.BackColor = System.Drawing.Color.Black;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label13.ForeColor = System.Drawing.Color.Navy;
+            this.label13.Location = new System.Drawing.Point(480, 95);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(41, 30);
+            this.label13.TabIndex = 10;
+            this.label13.Text = "A";
+            this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label14
+            // 
+            this.label14.BackColor = System.Drawing.Color.Black;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label14.ForeColor = System.Drawing.Color.Navy;
+            this.label14.Location = new System.Drawing.Point(438, 127);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(41, 30);
+            this.label14.TabIndex = 10;
+            this.label14.Text = "B";
+            this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label15
+            // 
+            this.label15.BackColor = System.Drawing.Color.Black;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label15.ForeColor = System.Drawing.Color.Navy;
+            this.label15.Location = new System.Drawing.Point(438, 159);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(41, 30);
+            this.label15.TabIndex = 10;
+            this.label15.Text = "C";
+            this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label16
+            // 
+            this.label16.BackColor = System.Drawing.Color.Black;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label16.ForeColor = System.Drawing.Color.Navy;
+            this.label16.Location = new System.Drawing.Point(396, 191);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(41, 30);
+            this.label16.TabIndex = 10;
+            this.label16.Text = "D";
+            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label17
+            // 
+            this.label17.BackColor = System.Drawing.Color.Black;
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label17.ForeColor = System.Drawing.Color.Navy;
+            this.label17.Location = new System.Drawing.Point(396, 223);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(41, 30);
+            this.label17.TabIndex = 10;
+            this.label17.Text = "E";
+            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label18
+            // 
+            this.label18.BackColor = System.Drawing.Color.Black;
+            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label18.ForeColor = System.Drawing.Color.Navy;
+            this.label18.Location = new System.Drawing.Point(438, 255);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(41, 30);
+            this.label18.TabIndex = 10;
+            this.label18.Text = "F";
+            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.Color.Black;
+            this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label19.ForeColor = System.Drawing.Color.Navy;
+            this.label19.Location = new System.Drawing.Point(480, 287);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(41, 30);
+            this.label19.TabIndex = 10;
+            this.label19.Text = "G";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // MovieHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1004, 519);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.labelAboutticket);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.buttonReturn);
@@ -444,5 +543,12 @@
         private System.Windows.Forms.Label LabelPrice;
         private System.Windows.Forms.Label labelMoney1;
         private System.Windows.Forms.Label labelCountTicket;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label label19;
     }
 }
