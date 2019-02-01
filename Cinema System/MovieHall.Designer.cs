@@ -282,8 +282,9 @@
             // 
             // buttonReturn
             // 
-            this.buttonReturn.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonReturn.BackColor = System.Drawing.Color.Black;
             this.buttonReturn.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.buttonReturn.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.buttonReturn.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.buttonReturn.Location = new System.Drawing.Point(974, -2);
             this.buttonReturn.Name = "buttonReturn";
@@ -359,9 +360,9 @@
             // 
             this.labelAboutticket.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelAboutticket.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.labelAboutticket.Location = new System.Drawing.Point(772, 478);
+            this.labelAboutticket.Location = new System.Drawing.Point(783, 490);
             this.labelAboutticket.Name = "labelAboutticket";
-            this.labelAboutticket.Size = new System.Drawing.Size(250, 30);
+            this.labelAboutticket.Size = new System.Drawing.Size(220, 27);
             this.labelAboutticket.TabIndex = 0;
             this.labelAboutticket.Text = "Broadway Private Cinema Center";
             // 

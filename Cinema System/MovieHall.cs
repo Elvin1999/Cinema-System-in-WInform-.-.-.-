@@ -113,7 +113,7 @@ namespace Cinema_System
             }
             else
             {
-                for (int k = 1; k <= 60; k++)
+                for (int k = 1; k <= 70; k++)
                 {
                     seat = new CinemaSeat();
                     seat.Number = k;
@@ -128,7 +128,7 @@ namespace Cinema_System
             cinema.Seats[50].IsWheerchairAccess = true;
             cinema.Seats[51].IsWheerchairAccess = true;
             int x = 0; int y = 0;
-            for (int k = 1; k <= 60; k++)
+            for (int k = 1; k <= 70; k++)
             {
 
                 metro = new MetroFramework.Controls.MetroButton();
@@ -138,7 +138,7 @@ namespace Cinema_System
                 metro.UseCustomBackColor = true;
                 metro.UseCustomForeColor = true;
                 metro.UseStyleColors = true;
-                metro.Location = new Point(530 + x, 159 + y);
+                metro.Location = new Point(530 + x, 127 + y);
                 metro.Text = cinema.Seats[k - 1].Number.ToString();
                 metro.TextAlign = ContentAlignment.MiddleCenter;
                 if (cinema.Seats[k - 1].IsWheerchairAccess)
@@ -155,13 +155,32 @@ namespace Cinema_System
                 }
                 metro.ForeColor = Color.Blue;
                 x += 42;
-                if (k % 10 == 0)
-                {
-                    x = 0;
-                    y += 32;
-                }
                 metro.Click += Metro_Click;
-                this.Controls.Add(metro);
+                if (k == 8)
+                {
+                    x = -42;y += 32;
+                }
+                else if (k == 18)
+                {
+                    x = -42;y += 32;
+                }
+                else if (k == 28)
+                {
+                    x = -84; y += 32;
+                }
+                else if (k == 40)
+                {
+                    x = -84; y += 32;
+                }
+                else if (k == 52)
+                {
+                    x = -42; y += 32;
+                }
+                else if (k == 62)
+                {
+                    x = 0;y += 32;
+                }
+                    this.Controls.Add(metro);
 
             }
         }
