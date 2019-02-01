@@ -378,7 +378,7 @@
             // 
             this.label13.BackColor = System.Drawing.Color.Black;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label13.ForeColor = System.Drawing.Color.Navy;
+            this.label13.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label13.Location = new System.Drawing.Point(480, 95);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(41, 30);
@@ -390,7 +390,7 @@
             // 
             this.label14.BackColor = System.Drawing.Color.Black;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label14.ForeColor = System.Drawing.Color.Navy;
+            this.label14.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label14.Location = new System.Drawing.Point(438, 127);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(41, 30);
@@ -402,7 +402,7 @@
             // 
             this.label15.BackColor = System.Drawing.Color.Black;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label15.ForeColor = System.Drawing.Color.Navy;
+            this.label15.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label15.Location = new System.Drawing.Point(438, 159);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 30);
@@ -414,7 +414,7 @@
             // 
             this.label16.BackColor = System.Drawing.Color.Black;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label16.ForeColor = System.Drawing.Color.Navy;
+            this.label16.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label16.Location = new System.Drawing.Point(396, 191);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 30);
@@ -426,7 +426,7 @@
             // 
             this.label17.BackColor = System.Drawing.Color.Black;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label17.ForeColor = System.Drawing.Color.Navy;
+            this.label17.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label17.Location = new System.Drawing.Point(396, 223);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(41, 30);
@@ -438,7 +438,7 @@
             // 
             this.label18.BackColor = System.Drawing.Color.Black;
             this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label18.ForeColor = System.Drawing.Color.Navy;
+            this.label18.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label18.Location = new System.Drawing.Point(438, 255);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(41, 30);
@@ -450,7 +450,7 @@
             // 
             this.label19.BackColor = System.Drawing.Color.Black;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.ForeColor = System.Drawing.Color.Navy;
+            this.label19.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.label19.Location = new System.Drawing.Point(480, 287);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(41, 30);
