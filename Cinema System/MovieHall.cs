@@ -63,7 +63,7 @@ namespace Cinema_System
         private char GetCurrentRawByLetter(int number)
         {
             char letter;
-            if (number >= 1&&number<=8)
+            if (number >= 1 && number <= 8)
             {
                 letter = 'A';
             }
@@ -193,11 +193,11 @@ namespace Cinema_System
                 metro.Click += Metro_Click;
                 if (k == 8)
                 {
-                    x = -42;y += 32;
+                    x = -42; y += 32;
                 }
                 else if (k == 18)
                 {
-                    x = -42;y += 32;
+                    x = -42; y += 32;
                 }
                 else if (k == 28)
                 {
@@ -213,19 +213,21 @@ namespace Cinema_System
                 }
                 else if (k == 62)
                 {
-                    x = 0;y += 32;
+                    x = 0; y += 32;
                 }
-                    this.Controls.Add(metro);
+                this.Controls.Add(metro);
 
             }
         }
         int clickcount = 0;
         string seats;
-        char oldletter; int checkcount = 0;
+        char oldletter;
+        char rowletter;
+        int checkcount = 0;
         int number;
         private void Metro_Click(object sender, EventArgs e)
         {
-            
+
 
             var mb = sender as MetroFramework.Controls.MetroButton;
             if (mb.BackColor == Color.FromArgb(16, 20, 30))
@@ -235,7 +237,7 @@ namespace Cinema_System
                 mb.BackColor = Color.Lime;
                 number = int.Parse(mb.Text);
 
-                char rowletter = GetCurrentRawByLetter(number);
+                rowletter = GetCurrentRawByLetter(number);
                 if (checkcount == 0)
                 {
                     ++checkcount;
@@ -253,6 +255,26 @@ namespace Cinema_System
                 labelMoney1.Text = Money.ToString();
                 labelCountTicket.Text = clickcount.ToString() + " tickets , " + "Row " + rowletter.ToString()
                     + " , Seats :" + seats;
+            }
+            else if (mb.BackColor == Color.Lime)
+            {
+                --clickcount;
+                number = int.Parse(mb.Text);
+                rowletter = GetCurrentRawByLetter(number);
+                mb.BackColor = Color.FromArgb(16, 20, 30);
+                cinema.Seats[number - 1].IsFull = false;
+                Money -= ImdbPoint;
+                if (Money == 0)
+                {
+                    labelMoney1.Text = "0";
+                }
+                else
+                {
+                    labelMoney1.Text = Money.ToString();
+                }
+
+                labelCountTicket.Text = clickcount.ToString() + " tickets , " + "Row " + rowletter.ToString()
+                    + " , Seats :";
             }
         }
         Cinema cinema = new Cinema();
