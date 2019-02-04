@@ -65,6 +65,10 @@
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
+            this.labelRated = new System.Windows.Forms.Label();
+            this.labelRted = new System.Windows.Forms.Label();
+            this.labelImdb = new System.Windows.Forms.Label();
+            this.labelIMDBRating = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxStar3)).BeginInit();
@@ -97,7 +101,7 @@
             // 
             // webBrowserYoutube
             // 
-            this.webBrowserYoutube.Location = new System.Drawing.Point(41, 44);
+            this.webBrowserYoutube.Location = new System.Drawing.Point(12, 47);
             this.webBrowserYoutube.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowserYoutube.Name = "webBrowserYoutube";
             this.webBrowserYoutube.Size = new System.Drawing.Size(274, 165);
@@ -153,7 +157,7 @@
             this.labelPlot.BackColor = System.Drawing.Color.Black;
             this.labelPlot.Font = new System.Drawing.Font("Comic Sans MS", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelPlot.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.labelPlot.Location = new System.Drawing.Point(23, 295);
+            this.labelPlot.Location = new System.Drawing.Point(2, 295);
             this.labelPlot.Name = "labelPlot";
             this.labelPlot.Size = new System.Drawing.Size(351, 215);
             this.labelPlot.TabIndex = 2;
@@ -250,7 +254,7 @@
             // pictureBoxStar1
             // 
             this.pictureBoxStar1.Image = global::Cinema_System.Properties.Resources.starempty;
-            this.pictureBoxStar1.Location = new System.Drawing.Point(41, 215);
+            this.pictureBoxStar1.Location = new System.Drawing.Point(12, 218);
             this.pictureBoxStar1.Name = "pictureBoxStar1";
             this.pictureBoxStar1.Size = new System.Drawing.Size(15, 15);
             this.pictureBoxStar1.TabIndex = 7;
@@ -258,7 +262,7 @@
             // 
             // pictureBoxStar2
             // 
-            this.pictureBoxStar2.Location = new System.Drawing.Point(62, 215);
+            this.pictureBoxStar2.Location = new System.Drawing.Point(33, 218);
             this.pictureBoxStar2.Name = "pictureBoxStar2";
             this.pictureBoxStar2.Size = new System.Drawing.Size(15, 15);
             this.pictureBoxStar2.TabIndex = 7;
@@ -266,7 +270,7 @@
             // 
             // pictureBoxStar3
             // 
-            this.pictureBoxStar3.Location = new System.Drawing.Point(83, 215);
+            this.pictureBoxStar3.Location = new System.Drawing.Point(54, 218);
             this.pictureBoxStar3.Name = "pictureBoxStar3";
             this.pictureBoxStar3.Size = new System.Drawing.Size(15, 15);
             this.pictureBoxStar3.TabIndex = 7;
@@ -274,7 +278,7 @@
             // 
             // pictureBoxStar4
             // 
-            this.pictureBoxStar4.Location = new System.Drawing.Point(104, 215);
+            this.pictureBoxStar4.Location = new System.Drawing.Point(75, 218);
             this.pictureBoxStar4.Name = "pictureBoxStar4";
             this.pictureBoxStar4.Size = new System.Drawing.Size(15, 15);
             this.pictureBoxStar4.TabIndex = 7;
@@ -282,7 +286,7 @@
             // 
             // pictureBoxStar5
             // 
-            this.pictureBoxStar5.Location = new System.Drawing.Point(126, 215);
+            this.pictureBoxStar5.Location = new System.Drawing.Point(97, 218);
             this.pictureBoxStar5.Name = "pictureBoxStar5";
             this.pictureBoxStar5.Size = new System.Drawing.Size(15, 15);
             this.pictureBoxStar5.TabIndex = 7;
@@ -458,12 +462,59 @@
             this.label19.Text = "G";
             this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // labelRated
+            // 
+            this.labelRated.AutoSize = true;
+            this.labelRated.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelRated.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelRated.Location = new System.Drawing.Point(136, 218);
+            this.labelRated.Name = "labelRated";
+            this.labelRated.Size = new System.Drawing.Size(45, 16);
+            this.labelRated.TabIndex = 11;
+            this.labelRated.Text = "Rated";
+            // 
+            // labelRted
+            // 
+            this.labelRted.AutoSize = true;
+            this.labelRted.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelRted.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelRted.Location = new System.Drawing.Point(187, 218);
+            this.labelRted.Name = "labelRted";
+            this.labelRted.Size = new System.Drawing.Size(45, 16);
+            this.labelRted.TabIndex = 11;
+            this.labelRted.Text = "Rated";
+            // 
+            // labelImdb
+            // 
+            this.labelImdb.AutoSize = true;
+            this.labelImdb.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelImdb.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelImdb.Location = new System.Drawing.Point(292, 109);
+            this.labelImdb.Name = "labelImdb";
+            this.labelImdb.Size = new System.Drawing.Size(77, 16);
+            this.labelImdb.TabIndex = 11;
+            this.labelImdb.Text = "imdbRating";
+            // 
+            // labelIMDBRating
+            // 
+            this.labelIMDBRating.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelIMDBRating.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.labelIMDBRating.Location = new System.Drawing.Point(375, 109);
+            this.labelIMDBRating.Name = "labelIMDBRating";
+            this.labelIMDBRating.Size = new System.Drawing.Size(30, 16);
+            this.labelIMDBRating.TabIndex = 11;
+            this.labelIMDBRating.Text = "5.5";
+            // 
             // MovieHall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(1004, 519);
+            this.Controls.Add(this.labelIMDBRating);
+            this.Controls.Add(this.labelImdb);
+            this.Controls.Add(this.labelRted);
+            this.Controls.Add(this.labelRated);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.label17);
@@ -509,6 +560,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -550,5 +602,9 @@
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label labelRated;
+        private System.Windows.Forms.Label labelRted;
+        private System.Windows.Forms.Label labelImdb;
+        private System.Windows.Forms.Label labelIMDBRating;
     }
 }

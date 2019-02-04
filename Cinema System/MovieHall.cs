@@ -111,6 +111,8 @@ namespace Cinema_System
             string s = Data.imdbRating.ToString();
             string newstr = s.Replace('.', ',');
             double result = double.Parse(newstr);
+            labelRted.Text = Data.Rated;
+            labelIMDBRating.Text = Data.imdbRating;
             ImdbPoint = result;
             //split
             iterator = Convert.ToInt32(result) / 2;
