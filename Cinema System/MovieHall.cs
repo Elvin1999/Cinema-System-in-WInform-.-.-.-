@@ -259,11 +259,13 @@ namespace Cinema_System
             else if (mb.BackColor == Color.Lime)
             {
                 --clickcount;
+
                 number = int.Parse(mb.Text);
                 rowletter = GetCurrentRawByLetter(number);
                 mb.BackColor = Color.FromArgb(16, 20, 30);
                 cinema.Seats[number - 1].IsFull = false;
                 Money -= ImdbPoint;
+
                 if (Money == 0)
                 {
                     labelMoney1.Text = "0";
@@ -272,7 +274,10 @@ namespace Cinema_System
                 {
                     labelMoney1.Text = Money.ToString();
                 }
-
+                if (clickcount == 0)
+                {
+                    labelMoney1.Text = "0";
+                }
                 labelCountTicket.Text = clickcount.ToString() + " tickets , " + "Row " + rowletter.ToString()
                     + " , Seats :";
             }
@@ -305,18 +310,18 @@ namespace Cinema_System
         }
         private void MovieHall_Shown(object sender, EventArgs e)
         {
-            //    VideoSearch videos = new VideoSearch();
-            //    var tmpUrl = videos.SearchQuery($"{labelFilmName.Text} trailer", 1);
-            //    var embed = "<html>" +
-            //            "<head>" +
-            //"<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
-            //"</head>" +
-            //"<body>" +
-            //"<iframe width=260px height=165px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
-            //"</body>" +
-            //"</html>";
-            //    var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
-            //    webBrowserYoutube.DocumentText = string.Format(embed, url);            
+            VideoSearch videos = new VideoSearch();
+            var tmpUrl = videos.SearchQuery($"{labelFilmName.Text} trailer", 1);
+            var embed = "<html>" +
+                    "<head>" +
+        "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"/>" +
+        "</head>" +
+        "<body>" +
+        "<iframe width=260px height=165px src =\"{0}\"frameborder = \"0\" encrypted-media\" allowfullscreen></iframe>" +
+        "</body>" +
+        "</html>";
+            var url = $@"https://www.youtube.com/embed/{tmpUrl[0].Url.ToString().Split('=').Last()}";
+            webBrowserYoutube.DocumentText = string.Format(embed, url);
         }
 
 
