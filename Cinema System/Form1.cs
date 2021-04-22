@@ -83,7 +83,8 @@ namespace Cinema_System
                     var str = response.Content.ReadAsStringAsync().Result;
                     Data = JsonConvert.DeserializeObject(str);
                     pictureBoxMovie.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pictureBoxMovie.Load($@"{Data.Search[count].Poster}");
+                    var imagepath = Data.Search[count].Poster;
+                    pictureBoxMovie.Load($@"{imagepath}");
                     metroLabelTitle.Text = Data.Search[count].Title;
                     metroLabelGenre.Text = Data.Search[count].Genre;
                     metroLabelYear.Text = Data.Search[count].Year;
@@ -107,7 +108,7 @@ namespace Cinema_System
                 }
                 catch (Exception)
                 {
-                    IsNormal = true;
+                    //IsNormal = true;
                 }
                 if (IsNormal)
                 {
